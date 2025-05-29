@@ -1,15 +1,132 @@
-import { Button, HStack } from "@chakra-ui/react"
+import React from "react";
+import Layout from "@/components/Layout";
+import ExpertiseList from "@/components/ExpertiseList";
+import { PiEnvelopeSimpleLight, PiPhone, PiTwitterLogo  } from "react-icons/pi";
+import { SlLocationPin } from "react-icons/sl";
+import { SlSocialLinkedin } from "react-icons/sl";
+import { FiGithub } from "react-icons/fi";
+import { Button, Input, InputGroup } from "@chakra-ui/react";
 
 function About() {
   return (
-    <div>
-     <HStack>
-      <Button>Click me</Button>
-      <Button>Click me</Button>
-    </HStack>
+    <Layout>
+      <div className="flex gap-10 mx-20 mt-10">
+        <div>
+          <div className="border-2 w-[350px] p-5 mb-4">
+            <img src="/images/IMG_3145.PNG" alt="" className="w-[100px] rounded-full mb-3" />
+            <h2 className="text-2xl font-semibold">Christopher Okoro</h2>
+            <p className="text-[#a8a9a8]">Senior Software Engineer | UI/UX Designer </p>
+          </div>
+          <div className="border-2 w-[350px] p-5 mt-4">
+            <h2 className="text-2xl font-semibold">Contact Details</h2>
+            <p className="flex items-center gap-2 my-3 text-[#a8a9a8]"> <PiEnvelopeSimpleLight className="text-[#4f46e5]" size={20}/> christofaokoro@gmail.com</p>
+            <p className="flex items-center gap-2 my-3 text-[#a8a9a8]"> <PiPhone className="text-[#4f46e5]" size={20} /> +(234) 8171-204-103</p>
+            <p className="flex items-center gap-2 my-3 text-[#a8a9a8]"> <SlLocationPin className="text-[#4f46e5]" size={20} /> Lagos, Nigeria</p>
+            <div className="border-b border-2 w-70 mx-auto my-5"></div>
+            <div className="flex items-center gap-3">
+              <Button className="border border-[#4f46e5] p-3 w-10 text-[#4f46e5]"><SlSocialLinkedin /></Button>
+              <Button className="border border-[#4f46e5] p-3 w-10 text-[#4f46e5]"><FiGithub /></Button>
+              <Button className="border border-[#4f46e5] p-3 w-10 text-[#4f46e5]"><PiTwitterLogo/></Button>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div className="border-2 p-5 mb-4">
+            <h2 className="text-2xl font-semibold mb-4">My Journey</h2>
+            <div className="bg-blue text-[#a8a9a8]">
+              <p className="mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur
+              quae saepe, officia exercitationem fugiat temporibus error placeat iure fuga dolorum tempora. Possimus suscipit error assumenda,
+              quidem aperiam omnis molestias provident?. <br/>
+              </p>
 
-    </div>
-  )
+              <p className="mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur
+              quae saepe, officia exercitationem fugiat temporibus error placeat
+              iure fuga dolorum tempora. Possimus suscipit error assumenda,
+              quidem aperiam omnis molestias provident?. <br /></p>
+
+              <p className="mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur
+              quae saepe, officia exercitationem fugiat temporibus error placeat
+              iure fuga dolorum tempora. Possimus suscipit error assumenda,
+              quidem aperiam omnis molestias provident?. <br /></p>
+            </div>
+          </div>
+
+          <div className="border-2 p-5 mb-4">
+            <h2 className="text-2xl font-semibold">Skills & Expertise</h2>
+            <div>
+              <ExpertiseList />
+            </div>
+          </div>
+
+          <div className="border-2 p-5 mb-4">
+            <h2 className="text-2xl font-semibold">Professional Experience</h2>
+
+            <div className="my-5">
+              <div className="flex justify-between items-center ml-5">
+                <h3 className="text-l font-semibold">Senior Software Engineer</h3>
+                <p className="text-[#a8a9a8]">2022 - Present</p>
+              </div>
+
+              <p className="text-[#a8a9a8] ml-8">
+                <span> Lorem ipsum dolor, sit amet consectetur </span>
+                adipisicing elit. In, doloremque. Nesciunt doloremque voluptatem
+                exercitationem veritatis nisi eius pariatur saepe explicabo
+                dolorem dolor doloribus molestias, cupiditate corporis dicta a,
+                velit amet.
+              </p>
+            </div>
+
+            <div className="mb-5">
+              <div className="flex justify-between items-center ml-5">
+                <h3 className="text-l font-semibold">Senior Software Engineer</h3>
+                <p className="text-[#a8a9a8]">2022 - Present</p>
+              </div>
+
+              <p className="text-[#a8a9a8] ml-8">
+                <span> Lorem ipsum dolor, sit amet consectetur </span>
+                adipisicing elit. In, doloremque. Nesciunt doloremque voluptatem
+                exercitationem veritatis nisi eius pariatur saepe explicabo
+                dolorem dolor doloribus molestias, cupiditate corporis dicta a,
+                velit amet.
+              </p>
+            </div>
+
+            <div className="mb-5">
+              <div className="flex justify-between items-center ml-5">
+                <h3 className="text-l font-semibold">Senior Software Engineer</h3>
+                <p className="text-[#a8a9a8]">2022 - Present</p>
+              </div>
+
+              <p className="text-[#a8a9a8] ml-8">
+                <span> Lorem ipsum dolor, sit amet consectetur </span>
+                adipisicing elit. In, doloremque. Nesciunt doloremque voluptatem
+                exercitationem veritatis nisi eius pariatur saepe explicabo
+                dolorem dolor doloribus molestias, cupiditate corporis dicta a,
+                velit amet.
+              </p>
+            </div>
+
+             <div className="mb-5">
+              <div className="flex justify-between items-center ml-5">
+                <h3 className="text-l font-semibold">Senior Software Engineer</h3>
+                <p className="text-[#a8a9a8]">2022 - Present</p>
+              </div>
+
+              <p className="text-[#a8a9a8] ml-8">
+                <span> Lorem ipsum dolor, sit amet consectetur </span>
+                adipisicing elit. In, doloremque. Nesciunt doloremque voluptatem
+                exercitationem veritatis nisi eius pariatur saepe explicabo
+                dolorem dolor doloribus molestias, cupiditate corporis dicta a,
+                velit amet.
+              </p>
+            </div>
+           
+
+          </div>
+        </div>
+      </div>
+    </Layout>
+  );
 }
 
-export default About
+export default About;

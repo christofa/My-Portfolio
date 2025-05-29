@@ -1,0 +1,26 @@
+import React from "react";
+import { Field, Input, Textarea, Button } from "@chakra-ui/react";
+
+function HomeContact() {
+  return (
+    <div className="mx-20 py-20 text-center ">
+      <h2 className="text-xl font-bold">Ready to Start a Project?</h2>
+      <p className="mb-5">
+        Whether you have a groundbreaking idea or need help with an existing
+        project, i'd love to hear from you. Let's build something amazing
+        together.
+      </p>
+      <div className="flex flex-col items-center gap-3 w-[500px] mx-auto">
+        <Field.Root className="bg-white px-3">
+          <Input placeholder="Your Email" />
+        </Field.Root>
+
+        <Textarea placeholder="Your Message...."  className="bg-white h-40 px-3"/>
+
+        <Button className="bg-[#636ae8] w-[500px]">Send Message</Button>
+      </div>
+    </div>
+  );
+}
+
+export default HomeContact;

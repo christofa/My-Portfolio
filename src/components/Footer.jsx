@@ -9,13 +9,13 @@ function Footer() {
   return (
     <div>
       <div className="flex flex-col justify-center items-center gap-2 py-4">
-        <h1>Portfolio Showcase</h1>
-        <p>Stay up to date</p>
+        <h1 className="text-2xl font-bold my-5">Portfolio Showcase</h1>
+        <p className="font-semibold">Stay up to date</p>
         <div className="flex items-center gap-2">
           <InputGroup startElement={<RxEnvelopeClosed />} className="border-2">
             <Input placeholder="Enter your email"/>
           </InputGroup>
-          <Button className="bg-[#4f46e5] p-1 border-2-[#4f46e5] rounded ">
+          <Button className="bg-[#4f46e5] p-1 border-2-[#4f46e5] rounded text-white ">
             Subscribe
           </Button>
         </div>
@@ -51,9 +51,9 @@ function Footer() {
         <div className="border-2 rounded p-1">English</div>
         <p className="flex items-center gap-1">
           {" "}
-          <BiCopyright /> 2020 Portfolio Showcase <RxDotFilled />
-          Privacy <RxDotFilled />
-          Terms od Service <RxDotFilled />
+          <BiCopyright /> 2020 Portfolio Showcase <RxDotFilled className="m-3"/>
+          Privacy <RxDotFilled  className="m-3"/>
+          Terms od Service <RxDotFilled className="m-3" />
           Cookie Policy{" "}
         </p>
         <div className="flex items-center gap-3">
