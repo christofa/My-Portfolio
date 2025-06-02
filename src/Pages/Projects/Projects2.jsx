@@ -63,7 +63,7 @@ const projects = [
 function Projects2() {
   return (
     <div>
-      <div className="flex flex-wrap items-center gap-3">
+      <div className="grid grid-cols-2 md:md:grid-cols-3 lg:grid-cols-4 gap-6 max-w-7xl">
                 {projects.map((projects) => (
                   <Card.Root
                     maxW="260px"
@@ -98,14 +98,14 @@ function Projects2() {
                         {projects.stacks.map((stacks) => (
                           <div
                             key={stacks}
-                            className="border text-[12px] font-semibold p-1 rounded"
+                            className="border border-[#4f46e5] text-[9px] lg:text-[12px] font-semibold p-[5px] rounded text-[#4f46e5]"
                           >
                             <p>{stacks}</p>
                           </div>
                         ))}
                       </Card.Description>
                       <div className=" flex items-center gap-2 mt-3">
-                        <Button className="border rounded px-2 text-xs font-semibold"> <MdArrowOutward /> Read Article </Button>
+                        <Button className="border rounded px-2 text-xs font-semibold bg-[#4f46e5] text-white"> <MdArrowOutward /> Read Article </Button>
                       </div>
                     </Card.Body>
                   </Card.Root>

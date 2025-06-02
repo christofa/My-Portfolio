@@ -10,14 +10,14 @@ import { Button, Input, InputGroup } from "@chakra-ui/react";
 function About() {
   return (
     <Layout>
-      <div className="flex gap-10 mx-20 mt-10">
+      <div className="flex flex-wrap lg:flex-nowrap md:flex-nowrap gap-10 mx-4 lg:mx-20 md:mx-5 mt-10">
         <div>
-          <div className="border-2 w-[350px] p-5 mb-4">
+          <div className="border-2 max-w-[100%] lg:w-[350px] md:w-[350px] p-5 lg:mb-4 md:mb-4">
             <img src="/images/IMG_3145.PNG" alt="" className="w-[100px] rounded-full mb-3" />
             <h2 className="text-2xl font-semibold">Christopher Okoro</h2>
             <p className="text-[#a8a9a8]">Senior Software Engineer | UI/UX Designer </p>
           </div>
-          <div className="border-2 w-[350px] p-5 mt-4">
+          <div className="hidden lg:block md:block border-2 w-[350px] p-5 lg:mt-4 md:mt-4 ">
             <h2 className="text-2xl font-semibold">Contact Details</h2>
             <p className="flex items-center gap-2 my-3 text-[#a8a9a8]"> <PiEnvelopeSimpleLight className="text-[#4f46e5]" size={20}/> christofaokoro@gmail.com</p>
             <p className="flex items-center gap-2 my-3 text-[#a8a9a8]"> <PiPhone className="text-[#4f46e5]" size={20} /> +(234) 8171-204-103</p>
@@ -34,7 +34,7 @@ function About() {
           <div className="border-2 p-5 mb-4">
             <h2 className="text-2xl font-semibold mb-4">My Journey</h2>
             <div className="bg-blue text-[#a8a9a8]">
-              <p className="mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur
+              <p className="mb-3 text-block">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur
               quae saepe, officia exercitationem fugiat temporibus error placeat iure fuga dolorum tempora. Possimus suscipit error assumenda,
               quidem aperiam omnis molestias provident?. <br/>
               </p>

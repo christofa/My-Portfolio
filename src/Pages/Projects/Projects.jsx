@@ -71,10 +71,10 @@ function Projects() {
 
   return (
     <Layout>
-      <div className="mx-20">
+      <div className="mx-4 lg:mx-20 md:mx-5">
         <div className="text-center my-10">
           <h1 className="text-2xl font-bold mb-3">My Creative Projects</h1>
-          <p className="text-xl font-light w-[680px] mx-auto">
+          <p className="text-[16px] lg:text-xl font-light lg:w-[680px] md:w-[500px] mx-auto">
             Explore a collection of my recent works showcasing skills in web
             development, UI/UX design, and more. Each project represents a
             unique challenge and solution.
@@ -88,12 +88,12 @@ function Projects() {
         {isToggled ? (
           <Projects2 />
         ) : (
-          <div className="flex flex-wrap items-center gap-3">
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 max-w-7xl">
             {projects.map((projects) => (
               <Card.Root
-                maxW="260px"
+                // maxW="260px"
                 overflow="hidden"
-                className="border"
+                className="border max-w-[179px] lg:max-w-[260px] md:max-w-[260px]"
                 key={projects.id}
               >
                 <Image
@@ -112,7 +112,7 @@ function Projects() {
                   {projects.isCompleted ? "Completed" : "In Progress"}
                 </span>
 
-                <Card.Body gap="1">
+                <Card.Body gap="2" >
                   <Card.Title className="font-semibold">
                     {projects.title}
                   </Card.Title>
@@ -123,19 +123,19 @@ function Projects() {
                     {projects.stacks.map((stacks) => (
                       <div
                         key={stacks}
-                        className="border text-[12px] font-semibold p-1 rounded"
+                        className="border border-[#4f46e5] text-[9px] lg:text-[12px] font-semibold p-[4px] rounded text-[#4f46e5]"
                       >
                         <p>{stacks}</p>
                       </div>
                     ))}
                   </Card.Description>
-                  <div className=" flex items-center gap-2 mt-3">
-                    <Button className="border rounded px-2 text-xs font-semibold">
+                  <div className="lg:flex md:flex items-center lg:gap-4 md:gap-4 gap-1 mt-3">
+                    <Button className="border rounded lg:px-2 md:px-2 w-full lg:w-[46%] md:w-[46%] mb-1 lg:mb-0 md:mb-0 lg:text-xs text-[12px] font-semibold bg-[#4f46e5] text-white">
                       {" "}
                       <FiGithub />
                       Code
                     </Button>
-                    <Button className="border rounded px-2 text-xs font-semibold">
+                    <Button className="border border-[#4f46e5] bore rounded lg:px-2 w-full lg:w-[46%] md:w-[46%] mt-1 lg:mt-0 md:mt-0  lg:text-xs text-[12px] font-semibold">
                       {" "}
                       <MdArrowOutward />
                       Demo

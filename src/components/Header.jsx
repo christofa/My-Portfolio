@@ -19,7 +19,7 @@ function Header() {
         <FaCode size={25} className="text-[#4f46e5]" />
         <h1 className="text-xl font-semibold">Christopher Okoro</h1>
       </div>
-      <div className="hidden lg:flex items-center gap-5">
+      <div className="hidden md:flex lg:flex items-center gap-5">
         <Button>
           <Link to="/">Home</Link>
         </Button>
@@ -34,7 +34,7 @@ function Header() {
           <Link to="/contact">Contact Me</Link>
         </Button>
       </div>
-      <div className="hidden lg:block">
+      <div className="hidden lg:block md:block">
         <ClientOnly fallback={<Skeleton boxSize="8" />}>
           <IconButton onClick={toggleColorMode} variant="outline" size="xl">
             {colorMode === "light" ? (
@@ -47,7 +47,7 @@ function Header() {
       </div>
 
       <div className="block sm:hidden">
-        <Box className="bg-white shadow-md ">
+        <Box className="bg-white shadow-md z-50 relative">
           <Flex
             className="px-7 py-4"
             justify="space-between"
@@ -56,36 +56,47 @@ function Header() {
             mx="auto"
           >
             <Box
-              className="text-2xl cursor-pointer transition-all duration-300 ease-in-out"
+              className="text-2xl cursor-pointer transition-all duration-300 ease-in-out z-[60]"
               onClick={toggleMenu}
             >
-              {isOpen ? <FiX /> : <FiMenu />}
+              {isOpen ? <FiX size={25} /> : <FiMenu size={25} />}
             </Box>
           </Flex>
 
           {/* Mobile Menu */}
           {isOpen && (
-            <Box className="fixed inset-0 bg-white flex flex-col items-center justify-center space-y-6 transition-all duration-300 ease-in-out z-40">
-              <Box
-                className="absolute top-6 right-6 text-3xl cursor-pointer"
-                onClick={toggleMenu}
-              >
-                <FiX />
+            <Box className="fixed inset-0 bg-black bg-opacity-30 backdrop-blur-sm z-40 ">
+              <Box className="absolute top-16 left-[60%] w-32 bg-white shadow-lg rounded-b-lg py-6 px-4 mt-3">
+                <Stack spacing={4} textAlign="center">
+                  <Box className="hover:text-blue-500 cursor-pointer">
+                    <Link to="/">Home</Link>
+                  </Box>
+                  <Box className="hover:text-blue-500 cursor-pointer">
+                    <Link to="/projects">Projects </Link>
+                  </Box>
+                  <Box className="hover:text-blue-500 cursor-pointer">
+                    <Link to="/about">About Me</Link>
+                  </Box>
+                  <Box className="hover:text-blue-500 cursor-pointer">
+                    <Link to="/contact">Contact Me</Link>
+                  </Box>
+                  <Box className="hover:text-blue-500 cursor-pointer">
+                    <ClientOnly fallback={<Skeleton boxSize="8" />}>
+                      <IconButton
+                        onClick={toggleColorMode}
+                        variant="outline"
+                        size="xl"
+                      >
+                        {colorMode === "light" ? (
+                          <LuSun className="text-[#4f46e5]" />
+                        ) : (
+                          <LuMoon className="text-[#4f46e5]" />
+                        )}
+                      </IconButton>
+                    </ClientOnly>
+                  </Box>
+                </Stack>
               </Box>
-              <Stack spacing={6} textAlign="center">
-                <Box className="text-xl font-semibold hover:text-blue-500 cursor-pointer">
-                  Home
-                </Box>
-                <Box className="text-xl font-semibold hover:text-blue-500 cursor-pointer">
-                  About
-                </Box>
-                <Box className="text-xl font-semibold hover:text-blue-500 cursor-pointer">
-                  Services
-                </Box>
-                <Box className="text-xl font-semibold hover:text-blue-500 cursor-pointer">
-                  Contact
-                </Box>
-              </Stack>
             </Box>
           )}
         </Box>
@@ -96,33 +107,4 @@ function Header() {
 
 export default Header;
 {
-  /* <Stack spacing={4}>
-              <Box className="hover:text-blue-500 cursor-pointer">
-                <Link to="/">Home</Link>
-              </Box>
-              <Box className="hover:text-blue-500 cursor-pointer">
-                <Link to="/projects">Projects </Link>
-              </Box>
-              <Box className="hover:text-blue-500 cursor-pointer">
-                <Link to="/about">About Me</Link>
-              </Box>
-              <Box className="hover:text-blue-500 cursor-pointer">
-                <Link to="/contact">Contact Me</Link>
-              </Box>
-              <Box className="hover:text-blue-500 cursor-pointer">
-                <ClientOnly fallback={<Skeleton boxSize="8" />}>
-                  <IconButton
-                    onClick={toggleColorMode}
-                    variant="outline"
-                    size="xl"
-                  >
-                    {colorMode === "light" ? (
-                      <LuSun className="text-[#4f46e5]" />
-                    ) : (
-                      <LuMoon className="text-[#4f46e5]" />
-                    )}
-                  </IconButton>
-                </ClientOnly>
-              </Box>
-            </Stack> */
 }

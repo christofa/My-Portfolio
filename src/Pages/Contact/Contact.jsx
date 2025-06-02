@@ -16,15 +16,15 @@ import {
 function Contact() {
   return (
     <Layout>
-      <div className="mx-20 mt-10 mb-20">
+      <div className="mx-5 lg:mx-20 md:mx-10 mt-10 mb-20">
         <div className="flex flex-col items-center justify-center  my-10">
           <h1 className="text-2xl font-bold mb-4">Get In Touch</h1>
-          <p className="w-[600px] text-center">
+          <p className="lg:w-[600px] md:w-[500px] text-center">
             Have a project in mind or want to discuss potential opportunities?
             I'd love to hear from you.
           </p>
         </div>
-        <div className="flex justify-center items-center gap-10">
+        <div className="flex flex-wrap lg:justify-center md:flex-nowrap lg:items-center gap-10">
           <div className="w-[400px] border-2 p-6 h-[450px]">
             <h2 className="text-xl font-bold mb-5">Send Me a Message</h2>
 
