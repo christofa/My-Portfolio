@@ -17,7 +17,7 @@ function HomeContact() {
 
         <Textarea placeholder="Your Message...."  className="bg-white h-40 px-3"/>
 
-        <Button className="bg-[#636ae8] w-[360px] lg:w-[500px] md:w-[500px]">Send Message</Button>
+        <Button className="bg-[#636ae8] w-[100%] lg:w-[500px] md:w-[500px]">Send Message</Button>
       </div>
     </div>
   );

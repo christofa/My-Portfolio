@@ -66,55 +66,55 @@ function Home() {
         <div className="my-20 mx-4 lg:mx-20 md:mx-8" >
           <h2 className="text-center text-2xl font-bold mb-8">My Expertise</h2>
           <div className="grid grid-cols-2 lg:grid-cols-3 md:grid-cols-3 gap-2 lg:gap-[30px] md:gap-[15px] lg:mx-[40px]">
-            <div className="flex flex-start gap-2 border p-3 w-[175px] lg:w-[320px] md:w-[100%]">
-              <FaFigma className="text-[#4f46e5]" />
+            <div className="flex flex-start gap-2 border p-3 w-[100%] lg:w-[320px] md:w-[100%]">
+              <FaFigma className="text-[#4f46e5] mt-1 w-[20px] h-[20px] lg:w-[25px] h-[25px] md:w-[25px] h-[25px]"/>
               <div>
-                <h3 className="text-[14px] lg:text-[16px] md:text-[16px] font-bold">UI/UX Design</h3>
-                <p className="w-32 lg:w-full md:w-full text-[12px] lg:text-sm md:text-sm">Crafting intutive and engaging user interfaces</p>
+                <h3 className="text-[13px] lg:text-[16px] md:text-[16px] font-bold">UI/UX Design</h3>
+                <p className="lg:w-full md:w-full text-[11px] lg:text-sm md:text-sm">Crafting intutive and engaging user interfaces</p>
               </div>
             </div>
-            <div className="flex flex-start gap-4 border p-3 w-[176px] lg:w-[320px] md:w-[100%]">
-              <div className="">
-                <IoMdCode className="text-[#4f46e5]" size={25}/>
+            <div className="flex flex-start gap-2 border p-3 w-[100%] lg:w-[320px] md:w-[100%]">
+              <div>
+                <IoMdCode className="text-[#4f46e5] mt-1 w-[20px] h-[20px] lg:w-[25px] h-[25px] md:w-[25px] h-[25px]" />
               </div>
               <div className="flex flex-col">
-                <h3 className="text-[14px] lg:text-[16px] md:text-[16px] font-bold">Web Development</h3>
-                <p className="w-32 lg:w-full md:w-full text-[12px] lg:text-sm md:text-sm">Building robust and scalable web applications</p>
+                <h3 className="text-[13px] lg:text-[16px] md:text-[16px] font-bold">Web Development</h3>
+                <p className="lg:w-full md:w-full text-[11px] lg:text-sm md:text-sm">Building robust and scalable web applications</p>
               </div>
             </div>
-            <div className="flex flex-start gap-4 border p-3 w-[175px] lg:w-[320px] md:w-[100%]">
-              <FiLayout className="text-[#4f46e5]"/>
+            <div className="flex flex-start gap-2 border p-3 w-[100%] lg:w-[320px] md:w-[100%]">
+              <FiLayout className="text-[#4f46e5] mt-1 w-[25px] h-[25px] lg:w-[25px] h-[25px] md:w-[25px] h-[25px]"/>
               <div>
-                <h3 className="text-[14px] lg:text-[16px] md:text-[16px]  font-bold">Responsive Design</h3>
-                <p className="w-32 lg:w-full md:w-full text-[12px] lg:text-sm md:text-sm">Ensuring seamless experiences across all devices</p>
+                <h3 className="text-[13px] lg:text-[16px] md:text-[16px] font-bold">Responsive Design</h3>
+                <p className="lg:w-full md:w-full text-[11px] lg:text-sm md:text-sm">Ensuring seamless experiences across all devices</p>
               </div>
             </div>
-            <div className="flex flex-start gap-4 border p-3 w-[175px] lg:w-[320px] md:w-[100%]">
-              <VscLayoutPanelOff  className="text-[#4f46e5]" size={25}/>
+            <div className="flex flex-start gap-2 border p-3 w-[100%] lg:w-[320px] md:w-[100%]">
+              <VscLayoutPanelOff  className="text-[#4f46e5] mt-1 w-[20px] h-[20px] lg:w-[25px] h-[25px] md:w-[25px] h-[25px]"/>
               <div>
-                <h3 className="text-[14px] lg:text-[16px] md:text-[16px] font-bold">Technical Writing</h3>
-                <p className="w-32 lg:w-full md:w-full text-[12px] lg:text-sm md:text-sm">Creating clear and concise documentation</p>
+                <h3 className="text-[13px] lg:text-[16px] md:text-[16px] font-bold">Technical Writing</h3>
+                <p className="w-32 lg:w-full md:w-full text-[11px] lg:text-sm md:text-sm">Creating clear and concise documentation</p>
               </div>
             </div>
-            <div className="flex flex-start gap-4 border p-3 w-[175px] lg:w-[320px] md:w-[100%]">
-              <AiOutlineApi size={35} className="text-[#4f46e5]"/>
+            <div className="flex flex-start gap-2 border p-3 w-[100%] lg:w-[320px] md:w-[100%]">
+              <AiOutlineApi className="text-[#4f46e5] mt-1 w-[20px] h-[20px] lg:w-[25px] h-[25px] md:w-[25px] h-[25px]"/>
               <div>
-                <h3 className="text-[14px] lg:text-[16px] md:text-[16px] font-bold">API Integration</h3>
-                <p className="w-32 lg:w-full md:w-full text-[12px] lg:text-sm md:text-sm">Connecting diverse systems for seamless data flow</p>
+                <h3 className="text-[13px] lg:text-[16px] md:text-[16px] font-bold">API Integration</h3>
+                <p className="lg:w-full md:w-full text-[11px] lg:text-sm md:text-sm">Connecting diverse systems for seamless data flow</p>
               </div>
             </div> 
-            <div className="flex flex-start gap-4 border p-3 w-[175px] lg:w-[320px] md:w-[100%]">
-              <SiWeb3Dotjs size={25} />
+            <div className="flex flex-start gap-2 border p-3 w-[100%] lg:w-[320px] md:w-[100%]">
+              <SiWeb3Dotjs className="text-[#4f46e5] mt-1 w-[20px] h-[20px] lg:w-[25px] h-[25px] md:w-[25px] h-[25px]" />
               <div>
-                <h3 className="text-[14px] lg:text-[16px] md:text-[16px] font-bold">Project Management</h3>
-              <p className="w-32 lg:w-full md:w-full text-[12px] lg:text-sm md:text-sm">Organizing and leading projects to success</p>
+                <h3 className="text-[13px] lg:text-[16px] md:text-[16px] font-bold">Project Management</h3>
+              <p className="lg:w-full md:w-full text-[11px] lg:text-sm md:text-sm">Organizing and leading projects to success</p>
               </div>
             </div>
           </div>
         </div>
 
-        <div className="flex justify-center items-center gap-5 lg:gap-20 md:gap-20 my-20 mx-4 lg:mx-20 md:mx-8">
-          <div>
+        <div className="flex flex-start justify-center items-center gap-4  text-[13px] lg:text-[17px] md:text-[16px] lg:gap-20 md:gap-[27px] my-20 mx-4 lg:mx-20 md:mx-8">
+          <div className="">
             <img src="/images/IMG_3145.PNG" alt="chris" className="w-[500px] lg:w-[220px] md:w-[220px] rounded-full border-4 border-[#4f46e5]"/>
           </div>
           <div>

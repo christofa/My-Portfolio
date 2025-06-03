@@ -7,21 +7,20 @@ import { Button, Input, InputGroup } from "@chakra-ui/react";
 
 function Footer() {
   return (
-    <div>
+    <div className="mx-4 lg:mx-20 md:mx-8">
       <div className="flex flex-col justify-center items-center gap-2 py-4">
-        <h1 className="text-2xl font-bold my-5">Portfolio Showcase</h1>
         <p className="font-semibold">Stay up to date</p>
         <div className="flex items-center gap-2">
           <InputGroup startElement={<RxEnvelopeClosed />} className="border-2">
             <Input placeholder="Enter your email"/>
           </InputGroup>
-          <Button className="bg-[#4f46e5] p-1 border-2-[#4f46e5] rounded text-white ">
+          <Button className="bg-[#4f46e5] p-2 border-2-[#4f46e5] rounded text-white ">
             Subscribe
           </Button>
         </div>
       </div>
 
-      <div className="flex justify-between items-center pl-20 pr-80">
+      <div className="flex justify-between items-center text-[12px] lg:text-[16px] md:text-[16x] lg:pl-20 md:pl-20 lg:pr-65 md:pr-32">
         <div>
           <h1>Explore</h1>
           <p>Projects</p>
@@ -47,24 +46,21 @@ function Footer() {
         </div>
       </div>
 
-      <div className="flex justify-between items-center px-32 py-5">
+      <div className="flex justify-between items-center text-[12px] mt-3 mb-5 lg:mb-2 md:mb-2  lg:text-[16px] md:text-[16x] lg:px-32 md:px-10 lg:py-5 md:py-2">
         <div className="border-2 rounded p-1">English</div>
-        <p className="flex items-center gap-1">
+        <p className="flex items-center gap-1 text-[12px] lg:text-[16px] md:text-[16x]">
           {" "}
-          <BiCopyright /> 2020 Portfolio Showcase <RxDotFilled className="m-3"/>
-          Privacy <RxDotFilled  className="m-3"/>
-          Terms od Service <RxDotFilled className="m-3" />
-          Cookie Policy{" "}
+          <BiCopyright className="w-[12px] h-[12px] lg:w-[16px] h-[16px] md:w-[16px] h-[16px]"/> 2020 Portfolio Showcase 
         </p>
-        <div className="flex items-center gap-3">
+        <div className="flex items-center gap-2 lg:gap-3 md:gap-3">
           <span>
-            <SlSocialLinkedin size={20} />
+            <SlSocialLinkedin className="w-[15px] h-[15px] lg:w-[20px] h-[20px] md:w-[20px] h-[20px]"/>
           </span>
           <span>
-            <FiGithub size={20} />
+            <FiGithub  className="w-[15px] h-[15px] lg:w-[20px] h-[20px] md:w-[20px] h-[20px]"/>
           </span>
           <span>
-            <RxEnvelopeClosed size={20} />
+            <RxEnvelopeClosed  className="w-[15px] h-[15px] lg:w-[20px] h-[20px] md:w-[20px] h-[20px]"/>
           </span>
         </div>
       </div>

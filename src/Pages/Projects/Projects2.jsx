@@ -63,7 +63,7 @@ const projects = [
 function Projects2() {
   return (
     <div>
-      <div className="grid grid-cols-2 md:md:grid-cols-3 lg:grid-cols-4 gap-6 max-w-7xl">
+      <div className="grid grid-cols-2 md:md:grid-cols-3 lg:grid-cols-4 gap-2 lg:gap-6 md:gap-6 max-w-7xl">
                 {projects.map((projects) => (
                   <Card.Root
                     maxW="260px"
@@ -87,7 +87,7 @@ function Projects2() {
                       {projects.isCompleted ? "Completed" : "In Progress"}
                     </span>
       
-                    <Card.Body gap="1">
+                    <Card.Body gap="1" className="p-3 lg:p-5 md:p-5">
                       <Card.Title className="font-semibold">
                         {projects.title}
                       </Card.Title>
@@ -105,7 +105,7 @@ function Projects2() {
                         ))}
                       </Card.Description>
                       <div className=" flex items-center gap-2 mt-3">
-                        <Button className="border rounded px-2 text-xs font-semibold bg-[#4f46e5] text-white"> <MdArrowOutward /> Read Article </Button>
+                        <Button className="border rounded px-2 text-[12px] lg:text-xs md:text-xs font-semibold bg-[#4f46e5] text-white"> <MdArrowOutward className="w-[12px] h-[12px] lg:w-[16px] h-[16px] md:w-[16px] h-[16px]"/> Read Article </Button>
                       </div>
                     </Card.Body>
                   </Card.Root>

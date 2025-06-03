@@ -88,7 +88,7 @@ function Projects() {
         {isToggled ? (
           <Projects2 />
         ) : (
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 max-w-7xl">
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 lg:gap-6 md:gap-6 max-w-7xl">
             {projects.map((projects) => (
               <Card.Root
                 // maxW="260px"
@@ -112,7 +112,7 @@ function Projects() {
                   {projects.isCompleted ? "Completed" : "In Progress"}
                 </span>
 
-                <Card.Body gap="2" >
+                <Card.Body gap="2" className="p-3 lg:p-5 md:p-5">
                   <Card.Title className="font-semibold">
                     {projects.title}
                   </Card.Title>
@@ -129,15 +129,15 @@ function Projects() {
                       </div>
                     ))}
                   </Card.Description>
-                  <div className="lg:flex md:flex items-center lg:gap-4 md:gap-4 gap-1 mt-3">
-                    <Button className="border rounded lg:px-2 md:px-2 w-full lg:w-[46%] md:w-[46%] mb-1 lg:mb-0 md:mb-0 lg:text-xs text-[12px] font-semibold bg-[#4f46e5] text-white">
+                  <div className="flex lg:flex md:flex items-center lg:gap-4 md:gap-4 gap-1 mt-3">
+                    <Button className="border rounded lg:px-2 md:px-2 w-[50%] lg:w-[46%] md:w-[46%] lg:mb-0 md:mb-0 lg:text-xs text-[12px] font-semibold bg-[#4f46e5] text-white">
                       {" "}
-                      <FiGithub />
+                      <FiGithub className="w-[12px] h-[12px] lg:w-[16px] h-[16px] md:w-[16px] h-[16px]"/>
                       Code
                     </Button>
-                    <Button className="border border-[#4f46e5] bore rounded lg:px-2 w-full lg:w-[46%] md:w-[46%] mt-1 lg:mt-0 md:mt-0  lg:text-xs text-[12px] font-semibold">
+                    <Button className="border border-[#4f46e5] rounded lg:px-2 w-[50%] lg:w-[46%] md:w-[46%] lg:mt-0 md:mt-0  lg:text-xs text-[12px] font-semibold">
                       {" "}
-                      <MdArrowOutward />
+                      <MdArrowOutward className="w-[12px] h-[12px] lg:w-[16px] h-[16px] md:w-[16px] h-[16px]"/>
                       Demo
                     </Button>
                   </div>
