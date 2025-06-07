@@ -62,14 +62,15 @@ const projects = [
 
 function Projects2() {
   return (
-    <div>
+    <div className='font-inter'>
       <div className="grid grid-cols-2 md:md:grid-cols-3 lg:grid-cols-4 gap-2 lg:gap-6 md:gap-6 max-w-7xl">
                 {projects.map((projects) => (
                   <Card.Root
                     maxW="260px"
                     overflow="hidden"
-                    className="border"
+                    className='shadow-md'
                     key={projects.id}
+                    bg={{ base: "white", _dark: "#1E1E1E" }}
                   >
                     <Image
                       src={projects.image}
@@ -105,7 +106,7 @@ function Projects2() {
                         ))}
                       </Card.Description>
                       <div className=" flex items-center gap-2 mt-3">
-                        <Button className="border rounded px-2 text-[12px] lg:text-xs md:text-xs font-semibold bg-[#4f46e5] text-white"> <MdArrowOutward className="w-[12px] h-[12px] lg:w-[16px] h-[16px] md:w-[16px] h-[16px]"/> Read Article </Button>
+                        <Button className="rounded px-2 text-[12px] lg:text-xs md:text-xs font-semibold bg-[#4f46e5] text-white"> <MdArrowOutward className="w-[12px] h-[12px] lg:w-[16px] h-[16px] md:w-[16px] h-[16px]"/> Read Article </Button>
                       </div>
                     </Card.Body>
                   </Card.Root>

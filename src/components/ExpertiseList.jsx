@@ -1,27 +1,27 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 import { IoIosArrowDropdown, IoIosArrowDropup } from "react-icons/io";
 import { MdArrowCircleRight } from "react-icons/md";
 
 const expertiseData = [
   {
-    title: 'Front-end Development',
-    stacks: ['ReactJS', 'NextJS', 'Tailwind CSS', 'Redux'],
+    title: "Front-end Development",
+    stacks: ["ReactJS", "NextJS", "Tailwind CSS", "Redux"],
   },
   {
-    title: 'Back-end Development',
-    stacks: ['Node.js', 'Express.js', 'MongoDB', 'PostgreSQL'],
+    title: "Back-end Development",
+    stacks: ["Node.js", "Express.js", "MongoDB", "PostgreSQL"],
   },
   {
-    title: 'UI/UX Design',
-    stacks: ['Figma', 'Adobe XD', 'Framer'],
+    title: "UI/UX Design",
+    stacks: ["Figma", "Adobe XD", "Framer"],
   },
   {
-    title: 'Web3 Development',
-    stacks: ['Solidity', 'Ethers.js', 'Hardhat', 'Web3.js'],
+    title: "Web3 Development",
+    stacks: ["Solidity", "Ethers.js", "Hardhat", "Web3.js"],
   },
   {
-    title: 'Technical Writing',
-    stacks: ['Markdown', 'Docs-as-code', 'Notion', 'GitBook'],
+    title: "Technical Writing",
+    stacks: ["Markdown", "Docs-as-code", "Notion", "GitBook"],
   },
 ];
 
@@ -32,33 +32,39 @@ const ExpertiseList = () => {
     setActiveIndex(index === activeIndex ? null : index);
   };
 
-  console.log(activeIndex)
+  console.log(activeIndex);
 
   return (
-    <div className="max-w-2xl mx-auto p-4">
+    <div className="max-w-2xl mx-auto p-4 font-inter">
       <div className="space-y-2">
         {expertiseData.map((item, index) => (
-          <div key={index} className="border-b rounded-t-lg overflow-hidden">
-               <button
+          <div key={index} className="border-b rounded-t-lg overflow-hidden " >
+            <button
               onClick={() => toggleIndex(index)}
               className="flex justify-between items-center w-full text-left px-4 py-3  hover:bg-[#636ae8] hover:text-white font-medium"
             >
               {item.title}
-              
+
               <span>
-              <IoIosArrowDropdown  className='hover:bg-[#636ae8] hover:text-white ' size={20}/>
+                <IoIosArrowDropdown
+                  className="hover:bg-[#636ae8] hover:text-white "
+                  size={20}
+                />
               </span>
             </button>
 
-            
             <div
               className={`transition-all duration-300 ease-in-out ${
-                activeIndex === index ? 'max-h-40' : 'max-h-0'
-              } overflow-hidden bg-white px-4`}
+                activeIndex === index ? "max-h-40" : "max-h-0"
+              } overflow-hidden px-4`}
+              bg={{ base: "white", _dark: "black" }}
             >
               <ul className="py-2 list-disc pl-5">
                 {item.stacks.map((stack, i) => (
-                  <p key={i} className='flex items-center gap-3'> <MdArrowCircleRight  className='text-[#636ae8]'/> {stack}</p>
+                  <p key={i} className="flex items-center gap-3 text-[#666f77] text-[13px] lg:text-sm md:text-sm">
+                    {" "}
+                    <MdArrowCircleRight className="text-[#4f46e5]"/> {stack}
+                  </p>
                 ))}
               </ul>
             </div>

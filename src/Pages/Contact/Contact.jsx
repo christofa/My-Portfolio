@@ -16,7 +16,7 @@ import {
 function Contact() {
   return (
     <Layout>
-      <div className="mx-5 lg:mx-20 md:mx-10 mt-10 mb-20">
+      <div className="mx-5 lg:mx-20 md:mx-10 mt-10 mb-20 font-inter">
         <div className="flex flex-col items-center justify-center  my-10">
           <h1 className="text-2xl font-bold mb-4">Get In Touch</h1>
           <p className="lg:w-[600px] md:w-[500px] text-center">

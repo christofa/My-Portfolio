@@ -14,22 +14,22 @@ function Header() {
   const toggleMenu = () => setIsOpen(!isOpen);
 
   return (
-    <div className="flex justify-between items-center p-5 border-b-2 lg:px-10">
+    <div className="flex justify-between items-center border-b-2 p-5 lg:px-10 font-inter">
       <div className="flex items-center gap-2">
         <FaCode size={25} className="text-[#4f46e5]" />
         <h1 className="text-xl font-semibold">Christopher Okoro</h1>
       </div>
       <div className="hidden md:flex lg:flex items-center gap-5">
-        <Button>
+        <Button className="hover:text-[#4f46e5]">
           <Link to="/">Home</Link>
         </Button>
-        <Button>
+        <Button className="hover:text-[#4f46e5]">
           <Link to="/projects">Projects </Link>
         </Button>
-        <Button>
+        <Button className="hover:text-[#4f46e5]">
           <Link to="/about">About Me</Link>
         </Button>
-        <Button>
+        <Button className="hover:text-[#4f46e5]">
           {" "}
           <Link to="/contact">Contact Me</Link>
         </Button>
@@ -46,8 +46,8 @@ function Header() {
         </ClientOnly>
       </div>
 
-      <div className="block sm:hidden">
-        <Box className="bg-white shadow-md z-50 relative">
+      <div className="block sm:hidden" >
+        <Box className="bg-white shadow-md z-50 relative" bg={{ base: "white", _dark: "black" }}>
           <Flex
             className="px-7 py-4"
             justify="space-between"
@@ -66,7 +66,7 @@ function Header() {
           {/* Mobile Menu */}
           {isOpen && (
             <Box className="fixed inset-0 bg-black bg-opacity-30 backdrop-blur-sm z-40 ">
-              <Box className="absolute top-16 left-[60%] w-32 bg-white shadow-lg rounded-b-lg py-6 px-4 mt-3">
+              <Box className="absolute top-16 left-[60%] w-32 bg-white shadow-lg rounded-b-lg py-6 px-4 mt-3" bg={{ base: "white", _dark: "black" }}>
                 <Stack spacing={4} textAlign="center">
                   <Box className="hover:text-blue-500 cursor-pointer">
                     <Link to="/">Home</Link>

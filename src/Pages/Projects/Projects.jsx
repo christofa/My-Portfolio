@@ -71,7 +71,7 @@ function Projects() {
 
   return (
     <Layout>
-      <div className="mx-4 lg:mx-20 md:mx-5">
+      <div className="mx-4 lg:mx-20 md:mx-5 mb-20 font-inter">
         <div className="text-center my-10">
           <h1 className="text-2xl font-bold mb-3">My Creative Projects</h1>
           <p className="text-[16px] lg:text-xl font-light lg:w-[680px] md:w-[500px] mx-auto">
@@ -93,8 +93,9 @@ function Projects() {
               <Card.Root
                 // maxW="260px"
                 overflow="hidden"
-                className="border max-w-[179px] lg:max-w-[260px] md:max-w-[260px]"
+                className="max-w-[179px] lg:max-w-[260px] md:max-w-[260px] shadow-md"
                 key={projects.id}
+                bg={{ base: "white", _dark: "#1E1E1E" }}
               >
                 <Image
                   src={projects.image}
@@ -130,7 +131,7 @@ function Projects() {
                     ))}
                   </Card.Description>
                   <div className="flex lg:flex md:flex items-center lg:gap-4 md:gap-4 gap-1 mt-3">
-                    <Button className="border rounded lg:px-2 md:px-2 w-[50%] lg:w-[46%] md:w-[46%] lg:mb-0 md:mb-0 lg:text-xs text-[12px] font-semibold bg-[#4f46e5] text-white">
+                    <Button className="rounded lg:px-2 md:px-2 w-[50%] lg:w-[46%] md:w-[46%] lg:mb-0 md:mb-0 lg:text-xs text-[12px] font-semibold bg-[#4f46e5] text-white">
                       {" "}
                       <FiGithub className="w-[12px] h-[12px] lg:w-[16px] h-[16px] md:w-[16px] h-[16px]"/>
                       Code
