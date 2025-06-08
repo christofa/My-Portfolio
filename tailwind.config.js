@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 export default {
+  darkMode: 'class', 
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
@@ -22,6 +23,15 @@ export default {
           '"Noto Color Emoji"',
         ],
       },
+      keyframes: {
+        'gradient-shift': {
+          '0%, 100%': { backgroundPosition: '0% 50%' },
+          '50%': { backgroundPosition: '100% 50%' },
+        }
+      },
+      animation: {
+        'gradient-shift': 'gradient-shift 8s ease infinite', // 8s, ease, infinite loop
+      }
     },
   },
   plugins: [],

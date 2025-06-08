@@ -57,11 +57,10 @@ const ExpertiseList = () => {
               className={`transition-all duration-300 ease-in-out ${
                 activeIndex === index ? "max-h-40" : "max-h-0"
               } overflow-hidden px-4`}
-              bg={{ base: "white", _dark: "black" }}
             >
               <ul className="py-2 list-disc pl-5">
                 {item.stacks.map((stack, i) => (
-                  <p key={i} className="flex items-center gap-3 text-[#666f77] text-[13px] lg:text-sm md:text-sm">
+                  <p key={i} className="flex items-center gap-3 text-[13px] lg:text-sm md:text-sm dark:text-white">
                     {" "}
                     <MdArrowCircleRight className="text-[#4f46e5]"/> {stack}
                   </p>

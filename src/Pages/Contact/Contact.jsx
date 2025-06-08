@@ -17,7 +17,7 @@ function Contact() {
   return (
     <Layout>
       <div className="mx-5 lg:mx-20 md:mx-10 mt-10 mb-20 font-inter">
-        <div className="flex flex-col items-center justify-center  my-10">
+        <div className="flex flex-col items-center justify-center  my-10" >
           <h1 className="text-2xl font-bold mb-4">Get In Touch</h1>
           <p className="lg:w-[600px] md:w-[500px] text-center">
             Have a project in mind or want to discuss potential opportunities?
@@ -25,7 +25,7 @@ function Contact() {
           </p>
         </div>
         <div className="flex flex-wrap lg:justify-center md:flex-nowrap lg:items-center gap-10">
-          <div className="w-[400px] border-2 p-6 h-[450px]">
+          <div className="w-[400px] border shadow-md p-6 h-[450px] bg-white dark:bg-[#1E1E1E] dark:border-none">
             <h2 className="text-xl font-bold mb-5">Send Me a Message</h2>
 
             <Fieldset.Root size="lg" maxW="md">
@@ -62,13 +62,13 @@ function Contact() {
               <Button
                 type="submit"
                 alignSelf="flex-start"
-                className="bg-[#4f46e5] text-white w-full mt-5"
+                className="bg-[#4f46e5] text-white w-full mt-5 transition-all duration-200 hover:scale-105 hover:bg-[#4f46e5] hover:text-white active:scale-95"
               >
                 Send Message
               </Button>
             </Fieldset.Root>
           </div>
-          <div className="w-[400px] border-2 p-6 h-[450px]">
+          <div className="w-[400px] border shadow-md p-6 h-[450px] dark:bg-[#1E1E1E] dark:border-none">
             <h2 className="text-xl font-bold mb-4">Contact Information</h2>
             <div className="flex flex-start gap-5 mb-5">
               <div className="mt-1 bg-[#e0e7ff] rounded-full border-2 border-[#e0e7ff] w-10 h-10 flex items-center justify-center">

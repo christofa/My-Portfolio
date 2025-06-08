@@ -15,9 +15,9 @@ function HomeContact() {
           <Input placeholder="Your Email" />
         </Field.Root>
 
-        <Textarea placeholder="Your Message...."  className="bg-white h-40 px-3"/>
+        <Textarea placeholder="Your Message...."  className="bg-white h-40 px-3 pt-3"/>
 
-        <Button className="bg-[#636ae8] w-[100%] lg:w-[500px] md:w-[500px]">Send Message</Button>
+        <Button className="bg-[#4f46e5] w-[100%] lg:w-[500px] md:w-[500px] transition-all duration-200 hover:scale-105 hover:bg-[#4f46e5] hover:text-white active:scale-95">Send Message</Button>
       </div>
     </div>
   );

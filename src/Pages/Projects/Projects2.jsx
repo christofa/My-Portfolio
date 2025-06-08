@@ -106,7 +106,7 @@ function Projects2() {
                         ))}
                       </Card.Description>
                       <div className=" flex items-center gap-2 mt-3">
-                        <Button className="rounded px-2 text-[12px] lg:text-xs md:text-xs font-semibold bg-[#4f46e5] text-white"> <MdArrowOutward className="w-[12px] h-[12px] lg:w-[16px] h-[16px] md:w-[16px] h-[16px]"/> Read Article </Button>
+                        <Button className="rounded px-2 text-[12px] lg:text-xs md:text-xs font-semibold bg-[#4f46e5] text-white transition-all duration-200 hover:scale-105 hover:bg-[#4f46e5] active:scale-95"> <MdArrowOutward className="w-[12px] h-[12px] lg:w-[16px] h-[16px] md:w-[16px] h-[16px]"/> Read Article </Button>
                       </div>
                     </Card.Body>
                   </Card.Root>

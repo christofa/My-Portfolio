@@ -14,7 +14,7 @@ function Header() {
   const toggleMenu = () => setIsOpen(!isOpen);
 
   return (
-    <div className="flex justify-between items-center border-b-2 p-5 lg:px-10 font-inter">
+    <div className="flex justify-between items-center border-b-2  p-5 lg:px-10 font-inter dark:border-b-[#1E1E1E] ">
       <div className="flex items-center gap-2">
         <FaCode size={25} className="text-[#4f46e5]" />
         <h1 className="text-xl font-semibold">Christopher Okoro</h1>

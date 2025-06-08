@@ -81,8 +81,8 @@ function Projects() {
           </p>
         </div>
         <div className="flex items-center gap-5 justify-center my-5">
-          <Button onClick={handleSecondChange} className="bg-[#4f46e5] text-white text-sm font-semibold p-4 rounded-3xl">All Projects</Button>
-          <Button onClick={handleFirstChange} className="border border-[#4f46e5] text-sm font-semibold p-4 rounded-3xl">All Articles</Button>
+          <Button onClick={handleSecondChange} className="bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 bg-[length:200%_auto] animate-gradient-shift text-white text-sm font-semibold p-4 rounded-3xl transition-all duration-200 hover:scale-105 hover:bg-[#4f46e5] active:scale-95">All Projects</Button>
+          <Button onClick={handleFirstChange} className="border border-[#4f46e5] text-sm font-semibold p-4 rounded-3xl transition-all duration-200 hover:scale-105 hover:bg-[#4f46e5] active:scale-95">All Articles</Button>
         </div>
 
         {isToggled ? (
@@ -131,12 +131,12 @@ function Projects() {
                     ))}
                   </Card.Description>
                   <div className="flex lg:flex md:flex items-center lg:gap-4 md:gap-4 gap-1 mt-3">
-                    <Button className="rounded lg:px-2 md:px-2 w-[50%] lg:w-[46%] md:w-[46%] lg:mb-0 md:mb-0 lg:text-xs text-[12px] font-semibold bg-[#4f46e5] text-white">
+                    <Button className="rounded lg:px-2 md:px-2 w-[50%] lg:w-[46%] md:w-[46%] lg:mb-0 md:mb-0 lg:text-xs text-[12px] font-semibold bg-[#4f46e5] text-white transition-all duration-200 hover:scale-105 hover:bg-[#4f46e5] active:scale-95">
                       {" "}
                       <FiGithub className="w-[12px] h-[12px] lg:w-[16px] h-[16px] md:w-[16px] h-[16px]"/>
                       Code
                     </Button>
-                    <Button className="border border-[#4f46e5] rounded lg:px-2 w-[50%] lg:w-[46%] md:w-[46%] lg:mt-0 md:mt-0  lg:text-xs text-[12px] font-semibold">
+                    <Button className="border border-[#4f46e5] rounded lg:px-2 w-[50%] lg:w-[46%] md:w-[46%] lg:mt-0 md:mt-0  lg:text-xs text-[12px] font-semibold transition-all duration-200 hover:scale-105 hover:bg-[#4f46e5] active:scale-95">
                       {" "}
                       <MdArrowOutward className="w-[12px] h-[12px] lg:w-[16px] h-[16px] md:w-[16px] h-[16px]"/>
                       Demo
