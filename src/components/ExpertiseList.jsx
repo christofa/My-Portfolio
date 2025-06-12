@@ -5,19 +5,19 @@ import { MdArrowCircleRight } from "react-icons/md";
 const expertiseData = [
   {
     title: "Front-end Development",
-    stacks: ["ReactJS", "NextJS", "Tailwind CSS", "Redux"],
+    stacks: [ "JavaScript", "ReactJS", "NextJS", "Tailwind CSS", "Redux"],
   },
   {
     title: "Back-end Development",
-    stacks: ["Node.js", "Express.js", "MongoDB", "PostgreSQL"],
+    stacks: ["Node.js", "Express.js", "MongoDB"],
   },
   {
     title: "UI/UX Design",
-    stacks: ["Figma", "Adobe XD", "Framer"],
+    stacks: ["Figma",],
   },
   {
     title: "Web3 Development",
-    stacks: ["Solidity", "Ethers.js", "Hardhat", "Web3.js"],
+    stacks: ["Solidity", "Web3.js"],
   },
   {
     title: "Technical Writing",

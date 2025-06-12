@@ -18,7 +18,7 @@ function Home() {
           <div className="w-[600px]">
             <div className="block lg:hidden md:hidden">
               <img
-                src="/images/IMG_3145.PNG"
+                src="/images/cover.PNG"
                 alt="chris"
                 className="w-[60px] rounded-full border-4 border-[#4f46e5] mb-4"
               />
@@ -35,7 +35,11 @@ function Home() {
             </p>
             <div className="flex justify-center lg:justify-start md:justify-start items-center gap-6 lg:gap-3 md:gap-3">
               <Button className="bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 bg-[length:200%_auto] animate-gradient-shift text-white w-[140px] rounded-xl text-sm transition-all duration-200 hover:scale-105 hover:bg-[#4f46e5] active:scale-95">
-                <a href="/cv.pdf" download="Christopher's CV" className="flex items-center gap-2">
+                <a
+                  href="/cv.pdf"
+                  download="Christopher's CV"
+                  className="flex items-center gap-2"
+                >
                   Download CV <FiDownload />
                 </a>
               </Button>
@@ -46,7 +50,7 @@ function Home() {
           </div>
           <div className="hidden lg:block md:block">
             <img
-              src="/images/IMG_3145.PNG"
+              src="/images/cover.PNG"
               alt="chris"
               className="lg:w-[400px] md:w-[320px] rounded-3xl"
             />
@@ -85,7 +89,7 @@ function Home() {
               </div>
               <div className="flex flex-col">
                 <h3 className="text-[13px] lg:text-[16px] md:text-[16px] font-bold">
-                  Web Development
+                  Front-end Development
                 </h3>
                 <p className="lg:w-full md:w-full text-[11px] lg:text-sm md:text-sm text-[#666f77]">
                   Building robust and scalable web applications
@@ -96,10 +100,10 @@ function Home() {
               <FiLayout className="text-[#4f46e5] w-[25px] h-[25px] lg:w-[25px] h-[25px] md:w-[25px] h-[25px]" />
               <div>
                 <h3 className="text-[13px] lg:text-[16px] md:text-[16px] font-bold">
-                  Responsive Design
+                  Back-end Development
                 </h3>
                 <p className="lg:w-full md:w-full text-[11px] lg:text-sm md:text-sm text-[#666f77]">
-                  Ensuring seamless experiences across all devices
+                  Ensuring working functionalities across all devices
                 </p>
               </div>
             </div>
@@ -142,18 +146,19 @@ function Home() {
         <div className="flex flex-start justify-center items-center gap-4 text-[13px] lg:text-[17px] md:text-[16px] lg:gap-20 md:gap-[27px] my-20 mx-4 lg:mx-20 md:mx-8">
           <div className="">
             <img
-              src="/images/IMG_3145.PNG"
+              src="/images/2.jpg"
               alt="chris"
-              className="w-[500px] lg:w-[220px] md:w-[220px] rounded-full border-4 border-[#4f46e5]"
+              className="w-[700px] h-[110px] lg:h-[150px] lg:w-[380px] md:w-[380px] rounded-full border-4 border-[#4f46e5]"
             />
           </div>
           <div>
             <h2 className="text-2xl font-semibold">A Little About Me</h2>
             <p className="my-5 text-[#666f77]">
-              With a passion for building user-centric digital products, i
-              combine technical skills with design principles to create
-              impactful solutions. I thrive on learning and tackling new
-              challenges{" "}
+              I am a skilled MERN stack developer and technical writer dedicated
+              to creating dynamic, user-focused web applications and impactful
+              documentation. With a passion for innovation and problem-solving,
+              I deliver efficient, highquality solutions that drive results and
+              exceed expectations.
             </p>
             <Button className="text-sm text-[#4f46e5] border border-[#4f46e5] p-3 rounded-xl transition-all duration-200 hover:scale-105 hover:bg-[#4f46e5] hover:text-white active:scale-95">
               {" "}

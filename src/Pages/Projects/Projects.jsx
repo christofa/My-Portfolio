@@ -11,26 +11,32 @@ const projects = [
     image:
       "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80",
     title: "Connarative",
-    description: "Web development",
-    stacks: ["ReactJs", "ShadCn", "MongoDB"],
+    description: "An AI application",
+    stacks: ["ReactJs", "ShadCn", "Vite", "Tailwind"],
+    gitLink: "https://github.com/christofa/CupidNotes",
+    sitLink: "",
     isCompleted: true,
   },
   {
     id: 2,
     image:
       "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80",
-    title: "Connarative",
-    description: "Web development",
-    stacks: ["ReactJs", "ShadCn", "MongoDB"],
+    title: "CupidNotes",
+    description: "Anonymus love Messaging app",
+    stacks: ["ReactJs", "Vite", "ExpressJS", "MongoDB"],
+    gitLink: "https://github.com/christofa/CupidNotes",
+    sitLink: "",
     isCompleted: true,
   },
   {
     id: 3,
     image:
       "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80",
-    title: "Connarative",
-    description: "Web development",
-    stacks: ["ReactJs", "ShadCn", "MongoDB"],
+    title: "Therapy-Buddy",
+    description: "An AI therapy Chatbot",
+    stacks: ["ReactJs", "Vite", "SCSS", "Dido"],
+    gitLink: "https://github.com/christofa/CupidNotes",
+    sitLink: "https://therapy-bud.netlify.app/",
     isCompleted: true,
   },
   {
@@ -40,6 +46,8 @@ const projects = [
     title: "Connarative",
     description: "Web development",
     stacks: ["ReactJs", "ShadCn", "MongoDB"],
+    gitLink: "https://github.com/christofa/CupidNotes",
+    sitLink: "",
     isCompleted: false,
   },
   {
@@ -49,6 +57,8 @@ const projects = [
     title: "Connarative",
     description: "Web development",
     stacks: ["ReactJs", "ShadCn", "MongoDB"],
+    gitLink: "https://github.com/christofa/CupidNotes",
+    sitLink: "",
     isCompleted: false,
   },
   {
@@ -58,6 +68,8 @@ const projects = [
     title: "Connarative",
     description: "Web development",
     stacks: ["ReactJs", "ShadCn", "MongoDB"],
+    gitLink: "https://github.com/christofa/CupidNotes",
+    sitLink: "",
     isCompleted: false,
   },
 ];

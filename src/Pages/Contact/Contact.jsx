@@ -17,7 +17,7 @@ function Contact() {
   return (
     <Layout>
       <div className="mx-5 lg:mx-20 md:mx-10 mt-10 mb-20 font-inter">
-        <div className="flex flex-col items-center justify-center  my-10" >
+        <div className="flex flex-col items-center justify-center  my-10">
           <h1 className="text-2xl font-bold mb-4">Get In Touch</h1>
           <p className="lg:w-[600px] md:w-[500px] text-center">
             Have a project in mind or want to discuss potential opportunities?
@@ -104,15 +104,23 @@ function Contact() {
             <div className="mt-8">
               <h1>Connect with me</h1>
               <div className="flex items-center gap-5 my-4">
-                <span className="mt-1 bg-[#e0e7ff] rounded-full border-2 border-[#e0e7ff] w-10 h-10 flex items-center justify-center text-[#4f46e5]">
-                  <BsGithub />
-                </span>
-                <span className="mt-1 bg-[#e0e7ff] rounded-full border-2 border-[#e0e7ff] w-10 h-10 flex items-center justify-center text-[#4f46e5]">
-                  <FaTwitter />
-                </span>
-                <span className="mt-1 bg-[#e0e7ff] rounded-full border-2 border-[#e0e7ff] w-10 h-10 flex items-center justify-center text-[#4f46e5]">
-                  <FaLinkedinIn />
-                </span>
+                <a href="https://github.com/christofa">
+                  <span className="mt-1 bg-[#e0e7ff] rounded-full border-2 border-[#e0e7ff] w-10 h-10 flex items-center justify-center text-[#4f46e5]">
+                    <BsGithub />
+                  </span>
+                </a>
+
+                <a href="https://x.com/its_chriso?s=21&t=g4Wq7FUnqrx98ghGXzs1ww">
+                  <span className="mt-1 bg-[#e0e7ff] rounded-full border-2 border-[#e0e7ff] w-10 h-10 flex items-center justify-center text-[#4f46e5]">
+                    <FaTwitter />
+                  </span>
+                </a>
+
+                <a href="https://www.linkedin.com/in/christopher-okoro-1931bb217?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app">
+                  <span className="mt-1 bg-[#e0e7ff] rounded-full border-2 border-[#e0e7ff] w-10 h-10 flex items-center justify-center text-[#4f46e5]">
+                    <FaLinkedinIn />
+                  </span>
+                </a>
               </div>
             </div>
           </div>

@@ -7,56 +7,62 @@ const projects = [
     {
       id: 1,
       image:
-        "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80",
-      title: "Connarative",
-      description: "Medium Blog",
-      stacks: ["ReactJs", "ShadCn", "MongoDB"],
-      isCompleted: false,
+        "/images/Tproj-1.PNG",
+      title: "Rendering real-time data with Vue, Node, and socket.io",
+      description: "Used vue, node & sockets to build a 2D game.",
+      stacks: ["Vue.js", "Node.js", "Socket.io"],
+      link: "https://blog.openreplay.com/render-real-time-data-with-vue-node-and-socket-io/",
+      isCompleted: true,
     },
     {
       id: 2,
       image:
-        "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80",
-      title: "Connarative",
-      description: "Medium Blog",
-      stacks: ["ReactJs", "ShadCn", "MongoDB"],
-      isCompleted: false,
+        "/images/Tproj-4.PNG",
+      title: "Recognizing Speech with vanilla JavaScript",
+      description: "Used vanilla JavaScript to build a speech recognition app",
+      stacks: ["JavaScript", "CSS"],
+      link: "https://blog.openreplay.com/recognizing-speech-in-vanilla-javascript/",
+      isCompleted: true,
     },
     {
       id: 3,
       image:
-        "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80",
-      title: "Connarative",
-      description: "Medium Blog",
-      stacks: ["ReactJs", "ShadCn", "MongoDB"],
+        "/images/Tproj-5.PNG",
+      title: "Build a Real Estate Platform with React and Webiny Headless CMS",
+      description: "Used the advanced search feature of Webiny CMS to build a real estate platform",
+      stacks: ["React.js", "GraphQL", "Webiny CMS"],
+      link: "https://www.webiny.com/blog/build-a-real-estate-platform-with-react-and-webiny-cms",
       isCompleted: true,
     },
     {
       id: 4,
       image:
-        "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80",
-      title: "Connarative",
-      description: "Medium Blog",
-      stacks: ["ReactJs", "ShadCn", "MongoDB"],
-      isCompleted: false,
+        "/images/Tproj-6.PNG",
+      title: "Building a Voice Controlled News Application using React, Alan AI, and Webiny CMS",
+      description: "Used Webiny CMS and Alan Ai build a voice-controlled blog",
+      stacks: ["React.js", "Alan AI", "GraphQL", "Webiny CMS"],
+      link: "https://www.webiny.com/blog/build-voice-controlled-news-app-alanai-webiny",
+      isCompleted: true,
     },
     {
-      id: 4,
+      id: 5,
       image:
-        "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80",
-      title: "Connarative",
-      description: "Medium Blog",
-      stacks: ["ReactJs", "ShadCn", "MongoDB"],
-      isCompleted: false,
+        "/images/Tproj-3.PNG",
+      title: "Build a Text Translator using React and Swagger UI",
+      description: "Used Swagger ui to create an app that translates texts",
+      stacks: ["React.js", "CSS", "Swagger UI"],
+      link: "https://blog.openreplay.com/build-a-text-translator-using-react-and-swagger-ui/",
+      isCompleted: true,
     },
     {
-      id: 4,
+      id: 6,
       image:
-        "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80",
-      title: "Connarative",
-      description: "Medium Blog",
-      stacks: ["ReactJs", "ShadCn", "MongoDB"],
-      isCompleted: false,
+        "/images/Tproj-2.PNG",
+      title: "Constructing an Alan AI-Powered Shopping Cart",
+      description: "Built a voice-controlled shopping cart using Alan AI",
+      stacks: ["React.js", "CSS", "Alan AI"],
+      link: "https://blog.openreplay.com/constructing-an-alan-ai-powered-shopping-cart/",
+      isCompleted: true,
     },
   ];
 
@@ -79,7 +85,7 @@ function Projects2() {
                     />
       
                     <span
-                      className={`border-2 absolute top-2 right-2 px-2 py-1 rounded-full ${
+                      className={`border-2 absolute top-2 right-2 px-2 py-1 rounded-full text-xs lg:text-sm md:text-sm ${
                         projects.isCompleted
                           ? "bg-green-100 text-green-800"
                           : "bg-red-100 text-red-800"
@@ -89,10 +95,10 @@ function Projects2() {
                     </span>
       
                     <Card.Body gap="1" className="p-3 lg:p-5 md:p-5">
-                      <Card.Title className="font-semibold">
+                      <Card.Title className="font-semibold text-sm lg:text-sm md:text-sm">
                         {projects.title}
                       </Card.Title>
-                      <Card.Description className="text-sm mb-1">
+                      <Card.Description className="text-[10px] lg:text-xs md:text-xs mb-1">
                         {projects.description}
                       </Card.Description>
                       <Card.Description className="flex flex-wrap items-center gap-2">
@@ -106,7 +112,9 @@ function Projects2() {
                         ))}
                       </Card.Description>
                       <div className=" flex items-center gap-2 mt-3">
-                        <Button className="rounded px-2 text-[12px] lg:text-xs md:text-xs font-semibold bg-[#4f46e5] text-white transition-all duration-200 hover:scale-105 hover:bg-[#4f46e5] active:scale-95"> <MdArrowOutward className="w-[12px] h-[12px] lg:w-[16px] h-[16px] md:w-[16px] h-[16px]"/> Read Article </Button>
+                        <a href={projects.link}>
+                          <Button className="rounded px-2 text-[12px] lg:text-xs md:text-xs font-semibold bg-[#4f46e5] text-white transition-all duration-200 hover:scale-105 hover:bg-[#4f46e5] active:scale-95"> <MdArrowOutward className="w-[12px] h-[12px] lg:w-[16px] h-[16px] md:w-[16px] h-[16px]"/> Read Article </Button> 
+                        </a>
                       </div>
                     </Card.Body>
                   </Card.Root>
