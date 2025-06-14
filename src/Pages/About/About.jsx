@@ -78,24 +78,25 @@ function About() {
             <h2 className="text-2xl font-semibold mb-4">My Journey</h2>
             <div className="bg-blue text-[#666f77] text-[13px] lg:text-sm md:text-sm">
               <p className="mb-3 text-block">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Pariatur quae saepe, officia exercitationem fugiat temporibus
-                error placeat iure fuga dolorum tempora. Possimus suscipit error
-                assumenda, quidem aperiam omnis molestias provident?. <br />
+                My journey in tech spans over four years of steady growth, from
+                learning the basics to building real-world solutions as a
+                full-stack developer.
+                <br />
               </p>
 
               <p className="mb-3">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Pariatur quae saepe, officia exercitationem fugiat temporibus
-                error placeat iure fuga dolorum tempora. Possimus suscipit error
-                assumenda, quidem aperiam omnis molestias provident?. <br />
+                I've interned with forward-thinking companies to sharpen my
+                skills and, in 2022, expanded into technical writing to better
+                express technical ideas and empower others. While landing
+                full-time roles has been tough due to regional limitations, my
+                drive remains unmatched. <br />
               </p>
 
               <p className="mb-3">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Pariatur quae saepe, officia exercitationem fugiat temporibus
-                error placeat iure fuga dolorum tempora. Possimus suscipit error
-                assumenda, quidem aperiam omnis molestias provident?. <br />
+                I'm confident in my ability to deliver, eager to learn, and
+                fully accountable. Every line of code and article I write
+                reflects my passion for solving problems and creating impact.
+                I'm just getting started and I'm ready. <br />
               </p>
             </div>
           </div>
@@ -114,17 +115,20 @@ function About() {
               <div className="flex justify-between items-center ml-5">
                 <h3 className="text-l font-semibold">
                   IT Engineer <br />
-                  <span className="italic text-[10px] lg:text-xs md:text-xs">Synnex Entertainment</span>
+                  <span className="italic text-[10px] lg:text-xs md:text-xs">
+                    Synnex Entertainment | Hybrid
+                  </span>
                 </h3>
                 <p className="text-[#666f77]">2024 - Present</p>
               </div>
 
               <p className="text-[#a8a9a8] ml-8">
-                <span> Lorem ipsum dolor, sit amet consectetur </span>
-                adipisicing elit. In, doloremque. Nesciunt doloremque voluptatem
-                exercitationem veritatis nisi eius pariatur saepe explicabo
-                dolorem dolor doloribus molestias, cupiditate corporis dicta a,
-                velit amet.
+                Lead all technical operations, including website maintenance,
+                email hosting, and graphic design. Monitor artists’ streaming
+                performance across platforms and manage payment systems for both
+                clients and the company. Ensure seamless digital functionality
+                and contribute to the company’s creative and operational
+                efficiency.
               </p>
             </div>
 
@@ -132,7 +136,9 @@ function About() {
               <div className="flex justify-between items-center ml-5">
                 <h3 className="text-l font-semibold">
                   Technical Writer (Contract) <br />
-                  <span className="italic text-[10px] lg:text-xs md:text-xs">OpenReplay Blog</span>
+                  <span className="italic text-[10px] lg:text-xs md:text-xs">
+                    OpenReplay Blog | Remote
+                  </span>
                 </h3>
                 <p className="text-[#a8a9a8]">2022 - 2023</p>
               </div>

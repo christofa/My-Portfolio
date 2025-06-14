@@ -82,6 +82,7 @@ function Projects2() {
                       src={projects.image}
                       alt="Green double couch with wooden legs"
                       className="relative"
+                      
                     />
       
                     <span

@@ -56,13 +56,19 @@ function Footer() {
         </p>
         <div className="flex items-center gap-2 lg:gap-3 md:gap-3 text-[#4f46e5] dark:text-[#636ae8]">
           <span>
+            <a href="https://www.linkedin.com/in/christopher-okoro-1931bb217?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app">
             <SlSocialLinkedin className="w-[15px] h-[15px] lg:w-[20px] h-[20px] md:w-[20px] h-[20px]"/>
+            </a>
           </span>
           <span>
+            <a href="https://github.com/christofa">
             <FiGithub  className="w-[15px] h-[15px] lg:w-[20px] h-[20px] md:w-[20px] h-[20px]"/>
+            </a>
           </span>
           <span>
+            <Link to="/contact">
             <RxEnvelopeClosed  className="w-[15px] h-[15px] lg:w-[20px] h-[20px] md:w-[20px] h-[20px]"/>
+            </Link>
           </span>
         </div>
       </div>
