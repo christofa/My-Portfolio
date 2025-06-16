@@ -1,5 +1,5 @@
 import Layout from "@/components/Layout";
-import Card from "@/components/card";
+import Card from "@/components/Card";
 import HomeContact from "@/components/HomeContact";
 import { Button } from "@chakra-ui/react";
 import { Link } from "react-router";
