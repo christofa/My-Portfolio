@@ -26,7 +26,7 @@ const projects = [
     description: "An Anonymus love Messaging app for lovers",
     stacks: ["React.js", "Vite", "Node.js", "ExpressJS", "MongoDB"],
     gitLink: "https://github.com/christofa/CupidNotes",
-    sitLink: false,
+    sitLink: "#",
     isCompleted: false,
   },
   {
@@ -53,7 +53,7 @@ const projects = [
     isCompleted: true,
   },
   {
-    id: 4,
+    id: 5,
     image:
       "/images/Proj-5.svg",
     title: "2D block game",
@@ -64,7 +64,7 @@ const projects = [
     isCompleted: true,
   },
   {
-    id: 5,
+    id: 6,
     image:
       "/images/Proj-7.svg",
     title: "Speech-recognition-chat-app",
@@ -75,14 +75,14 @@ const projects = [
     isCompleted: true,
   },
   {
-    id: 6,
+    id: 7,
     image:
       "/images/Proj-8.svg",
     title: "My Portfolio",
     description: "A website displaying all my capabilities and skills",
     stacks: ["ReactJs", "ShadCn", "MongoDB"],
     gitLink: "https://github.com/christofa/CupidNotes",
-    sitLink: "",
+    sitLink: "https://all-about-chris.vercel.app",
     isCompleted: false,
   },
 ];
