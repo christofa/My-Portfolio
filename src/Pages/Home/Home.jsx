@@ -14,11 +14,11 @@ function Home() {
   return (
     <Layout>
       <div className=" mt-10 mb-5 font-inter">
-        <div className="flex justify-between items-center mb-28 mx-4 lg:mx-20 md:mx-8">
+        <div className="flex justify-between items-center mb-28 mx-4 lg:mx-20 md:mx-8 animate-fade-in-up">
           <div className="w-[600px]">
             <div className="block lg:hidden md:hidden">
               <img
-                src="/images/cover.PNG"
+                src="/images/cover2.PNG"
                 alt="chris"
                 className="w-[60px] rounded-full border-4 border-[#4f46e5] mb-4"
               />
@@ -50,7 +50,7 @@ function Home() {
           </div>
           <div className="hidden lg:block md:block">
             <img
-              src="/images/cover.PNG"
+              src="/images/cover2.PNG"
               alt="chris"
               className="lg:w-[400px] md:w-[320px] rounded-3xl"
             />

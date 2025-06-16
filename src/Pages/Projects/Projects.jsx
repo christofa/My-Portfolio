@@ -122,7 +122,7 @@ function Projects() {
         {isToggled ? (
           <Projects2 />
         ) : (
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 lg:gap-6 md:gap-6 max-w-7xl">
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 lg:gap-6 md:gap-6 max-w-7xl animate-pop-in">
             {projects.map((projects) => (
               <Card.Root
                 // maxW="260px"

@@ -1,3 +1,4 @@
+import { useState } from "react";
 import Layout from "@/components/Layout";
 import { FaEnvelope, FaClock, FaLinkedinIn, FaTwitter } from "react-icons/fa";
 import { FaLocationDot } from "react-icons/fa6";
@@ -12,8 +13,45 @@ import {
   NativeSelect,
   Textarea,
 } from "@chakra-ui/react";
+import { Toaster, toaster } from "@/components/ui/toaster";
 
 function Contact() {
+  const [result, setResult] = useState("");
+
+  const KEY_HOLDER = "72981751-03a5-4f7e-8768-ce10ee1b7be7";
+
+  const handleSubmit = async (event) => {
+    event.preventDefault();
+    const formData = new FormData(event.target);
+    setResult("Sending....");
+    formData.append("access_key", KEY_HOLDER);
+
+    const response = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      body: formData,
+    });
+
+    const data = await response.json();
+
+    if (data.success) {
+      toaster.success({
+        title: "Submitted Successfully",
+        description: "You'd get a response as soon as possible. Thank you",
+        duration: 9000,
+      });
+      event.target.reset();
+    } else {
+      console.log("Error", data);
+      toaster.error({
+        title: "Oops, There seems to be a problem",
+        description: data.message,
+        duration: 9000,
+      });
+    }
+  };
+
+  console.log(result);
+
   return (
     <Layout>
       <div className="mx-5 lg:mx-20 md:mx-10 mt-10 mb-20 font-inter">
@@ -29,43 +67,48 @@ function Contact() {
             <h2 className="text-xl font-bold mb-5">Send Me a Message</h2>
 
             <Fieldset.Root size="lg" maxW="md">
-              <Fieldset.Content>
-                <Field.Root>
-                  <Field.Label>Name</Field.Label>
-                  <Input
-                    name="name"
-                    placeholder="Your name"
-                    className="bg-[#f9fafb] rounded-2xl p-2"
-                  />
-                </Field.Root>
+              <form onSubmit={handleSubmit}>
+                <Fieldset.Content>
+                  <Field.Root>
+                    <Field.Label>Name</Field.Label>
+                    <Input
+                      type="text"
+                      name="name"
+                      placeholder="John Doe"
+                      className="bg-[#f9fafb] rounded-2xl p-2 dark:text-black"
+                    />
+                  </Field.Root>
 
-                <Field.Root>
-                  <Field.Label>Email address</Field.Label>
-                  <Input
-                    name="email"
-                    type="email"
-                    placeholder="Your email"
-                    className="bg-[#f9fafb] rounded-2xl p-2"
-                  />
-                </Field.Root>
+                  <Field.Root>
+                    <Field.Label>Email address</Field.Label>
+                    <Input
+                      type="email"
+                      name="email"
+                      placeholder="example@mail.com"
+                      required
+                      className="bg-[#f9fafb] rounded-2xl p-2 dark:text-black"
+                    />
+                  </Field.Root>
 
-                <Field.Root>
-                  <Field.Label>Message</Field.Label>
-                  <Textarea
-                    name="notes"
-                    placeholder="Your Message"
-                    className="bg-[#f9fafb] rounded-2xl p-2 h-[100px]"
-                  />
-                </Field.Root>
-              </Fieldset.Content>
+                  <Field.Root>
+                    <Field.Label>Message</Field.Label>
+                    <Textarea
+                      name="message"
+                      required
+                      placeholder="Your Message"
+                      className="bg-[#f9fafb] rounded-2xl p-2 h-[100px] dark:text-black"
+                    />
+                  </Field.Root>
+                </Fieldset.Content>
 
-              <Button
-                type="submit"
-                alignSelf="flex-start"
-                className="bg-[#4f46e5] text-white w-full mt-5 transition-all duration-200 hover:scale-105 hover:bg-[#4f46e5] hover:text-white active:scale-95"
-              >
-                Send Message
-              </Button>
+                <Button
+                  type="submit"
+                  alignSelf="flex-start"
+                  className="bg-[#4f46e5] text-white w-full mt-5 transition-all duration-200 hover:scale-105 hover:bg-[#4f46e5] hover:text-white active:scale-95"
+                >
+                  Send Message
+                </Button>
+              </form>
             </Fieldset.Root>
           </div>
           <div className="w-[400px] border shadow-md p-6 h-[450px] dark:bg-[#1E1E1E] dark:border-none">
@@ -125,6 +168,7 @@ function Contact() {
             </div>
           </div>
         </div>
+        <Toaster />
       </div>
     </Layout>
   );
