@@ -167,6 +167,7 @@ function Projects() {
                   <div className="flex lg:flex md:flex items-center lg:gap-4 md:gap-4 gap-1 mt-3">
                     <a
                       href={projects.gitLink}
+                      target="_blank"
                       className="text-center rounded lg:px-2 md:px-2 w-[50%] lg:w-[46%] md:w-[46%] lg:mb-0 md:mb-0 lg:text-xs text-[12px] font-semibold bg-[#4f46e5] text-white transition-all duration-200 hover:scale-105 hover:bg-[#4f46e5] active:scale-95"
                     >
                       <Button className="">
@@ -177,6 +178,7 @@ function Projects() {
                     </a>
                     <a
                       href={projects.sitLink}
+                      target="_blank"
                       className="text-center border border-[#4f46e5] rounded lg:px-2 w-[50%] lg:w-[46%] md:w-[46%] lg:mt-0 md:mt-0  lg:text-xs text-[12px] font-semibold transition-all duration-200 hover:scale-105 hover:bg-[#4f46e5] active:scale-95"
                     >
                       <Button>

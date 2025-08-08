@@ -11,9 +11,11 @@ export default defineConfig({
     alias: {
       // This ensures that '@' maps to your 'src' directory
       '@': path.resolve(__dirname, './src'),
+      "@locator/babel-jsx/dist": path.resolve(__dirname, './node_modules/@locator/babel-jsx/dist'),
       // You can add more specific aliases if needed, e.g.:
       // '@/components': path.resolve(__dirname, './src/components'),
       // '@/pages': path.resolve(__dirname, './src/Pages'),
     },
   },
+  
 })
