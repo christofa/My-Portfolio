@@ -83,7 +83,7 @@ const projects = [
     stacks: ["ReactJs", "ShadCn", "MongoDB"],
     gitLink: "https://github.com/christofa/CupidNotes",
     sitLink: "https://all-about-chris.vercel.app",
-    isCompleted: false,
+    isCompleted: true,
   },
 ];
 

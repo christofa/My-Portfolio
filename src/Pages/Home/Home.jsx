@@ -19,7 +19,7 @@ function Home() {
           <div className="w-[600px]">
             <div className="block lg:hidden md:hidden">
               <img
-                src="/images/cover2.PNG"
+                src="/images/My-Image.jpg"
                 alt="chris"
                 className="w-[60px] rounded-full border-4 border-[#4f46e5] mb-4"
               />
@@ -51,7 +51,7 @@ function Home() {
           </div>
           <div className="hidden lg:block md:block">
             <img
-              src="/images/cover2.PNG"
+              src="/images/My-Image.jpg"
               alt="chris"
               className="lg:w-[400px] md:w-[320px] rounded-3xl"
             />
@@ -147,7 +147,7 @@ function Home() {
         <div className="flex flex-start justify-center items-center gap-4 text-[13px] lg:text-[17px] md:text-[16px] lg:gap-20 md:gap-[27px] my-20 mx-4 lg:mx-20 md:mx-8">
           <div className="">
             <img
-              src="/images/2.jpg"
+              src="/images/My-Image.jpg"
               alt="chris"
               className="w-[700px] h-[110px] lg:h-[150px] lg:w-[380px] md:w-[380px] rounded-full border-4 border-[#4f46e5]"
             />
