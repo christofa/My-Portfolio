@@ -9,7 +9,7 @@ const projects = [
   {
       id: 1,
     image:
-      "/images/Proj-1.svg",
+      "/images/synnex logo.PNG",
     title: "Synnex Website",
     description: "The official website for Synnex, a music distribution, A&R and management company",
     stacks: ["Next.js", "TypeScript", "ShadCn", "Paystack", "Tailwind CSS"],
@@ -21,7 +21,7 @@ const projects = [
   {
     id: 2,
     image:
-      "/images/Proj-1.svg",
+      "/images/HGC-Logo.jpg",
     title: "High Grace College Website",
     description: "The Official website for High Grace College, a secondary school in Nigeria",
     stacks: ["Next.js", "TypeScript", "HeroUI", "MongoDB", "Cloudinary", "Tailwind CSS"],
@@ -33,7 +33,7 @@ const projects = [
   {
     id: 3,
     image:
-      "/images/Proj-1.svg",
+      "/images/Echobase.png",
     title: "EchoBase",
     description: "A scalable voice-enabled AI platform built with Supabase, Next.js, and modern AI tools for conversational voice interactions.",
     stacks: ["React.js", "TypeScript", "HeroUI", "Supabase", "Groq", "Deepgram", "Tailwind CSS"],

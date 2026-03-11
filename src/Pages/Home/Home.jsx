@@ -35,18 +35,21 @@ function Home() {
               UI/UX design.
             </p>
             <div className="flex justify-center lg:justify-start md:justify-start items-center gap-6 lg:gap-3 md:gap-3">
-              <Button className="bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 bg-[length:200%_auto] animate-gradient-shift text-white w-[140px] rounded-xl text-sm transition-all duration-200 hover:scale-105 hover:bg-[#4f46e5] active:scale-95">
-                <a
-                  href="/cv.pdf"
-                  download="Christopher's CV"
-                  className="flex items-center gap-2"
-                >
+              <a
+                href="/cv.pdf"
+                download="Christopher's CV"
+                className="flex items-center gap-2"
+              >
+                <Button className="bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 bg-[length:200%_auto] animate-gradient-shift text-white w-[140px] rounded-xl text-sm transition-all duration-200 hover:scale-105 hover:bg-[#4f46e5] active:scale-95">
                   Download CV <FiDownload />
-                </a>
-              </Button>
-              <Button className="border border-[#4f46e5] w-[140px] text-[#4f46e5] rounded-xl text-sm py-2 px-4 transition-all duration-200 hover:scale-105 hover:bg-[#4f46e5] hover:text-white active:scale-95">
-                <Link to="/projects">View Projects</Link>
-              </Button>
+                </Button>
+              </a>
+
+              <Link to="/projects">
+                <Button className="border border-[#4f46e5] w-[140px] text-[#4f46e5] rounded-xl text-sm py-2 px-4 transition-all duration-200 hover:scale-105 hover:bg-[#4f46e5] hover:text-white active:scale-95">
+                  View Projects
+                </Button>
+              </Link>
             </div>
           </div>
           <div className="hidden lg:block md:block">
