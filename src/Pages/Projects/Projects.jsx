@@ -7,7 +7,7 @@ import { useState } from "react";
 
 const projects = [
   {
-    id: 1,
+      id: 1,
     image:
       "/images/Proj-1.svg",
     title: "Conarative",
@@ -21,6 +21,42 @@ const projects = [
   {
     id: 2,
     image:
+      "/images/Proj-1.svg",
+    title: "Conarative",
+    description: "An AI application where you can tell your stories",
+    stacks: ["React.js", "TypeScript", "ShadCn", "Vite", "Tailwind CSS"],
+    gitLink:
+      "https://github.com/code-z2/conarrate/blob/main/apps/client-app/tailwind.config.js",
+    sitLink: "https://conarrate.netlify.app/",
+    isCompleted: true,
+  },
+  {
+    id: 3,
+    image:
+      "/images/Proj-1.svg",
+    title: "Conarative",
+    description: "An AI application where you can tell your stories",
+    stacks: ["React.js", "TypeScript", "ShadCn", "Vite", "Tailwind CSS"],
+    gitLink:
+      "https://github.com/code-z2/conarrate/blob/main/apps/client-app/tailwind.config.js",
+    sitLink: "https://conarrate.netlify.app/",
+    isCompleted: true,
+  },
+  {
+    id: 4,
+    image:
+      "/images/Proj-1.svg",
+    title: "Conarative",
+    description: "An AI application where you can tell your stories",
+    stacks: ["React.js", "TypeScript", "ShadCn", "Vite", "Tailwind CSS"],
+    gitLink:
+      "https://github.com/code-z2/conarrate/blob/main/apps/client-app/tailwind.config.js",
+    sitLink: "https://conarrate.netlify.app/",
+    isCompleted: true,
+  },
+  {
+    id: 5,
+    image:
       "/images/Proj-2.svg",
     title: "CupidNotes",
     description: "An Anonymus love Messaging app for lovers",
@@ -30,7 +66,7 @@ const projects = [
     isCompleted: false,
   },
   {
-    id: 3,
+    id: 6,
     image:
       "/images/Proj-3.svg",
     title: "Therapy-Buddy",
@@ -41,7 +77,7 @@ const projects = [
     isCompleted: true,
   },
   {
-    id: 4,
+    id: 7,
     image:
       "/images/Proj-4.svg",
     title: "Magicbookwriter",
@@ -53,7 +89,7 @@ const projects = [
     isCompleted: true,
   },
   {
-    id: 5,
+    id: 8,
     image:
       "/images/Proj-5.svg",
     title: "2D block game",
@@ -64,7 +100,7 @@ const projects = [
     isCompleted: true,
   },
   {
-    id: 6,
+    id: 9,
     image:
       "/images/Proj-7.svg",
     title: "Speech-recognition-chat-app",
@@ -75,7 +111,7 @@ const projects = [
     isCompleted: true,
   },
   {
-    id: 7,
+    id: 10,
     image:
       "/images/Proj-8.svg",
     title: "My Portfolio",
