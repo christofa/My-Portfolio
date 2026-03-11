@@ -14,7 +14,7 @@ const projects = [
     description: "The official website for Synnex, a music distribution, A&R and management company",
     stacks: ["Next.js", "TypeScript", "ShadCn", "Paystack", "Tailwind CSS"],
     gitLink:
-      "https://github.com/code-z2/conarrate/blob/main/apps/client-app/tailwind.config.js",
+      "https://github.com/christofa/synnex-webpage",
     sitLink: "https://synnexent.com/",
     isCompleted: true,
   },
@@ -27,7 +27,7 @@ const projects = [
     stacks: ["Next.js", "TypeScript", "HeroUI", "MongoDB", "Cloudinary", "Tailwind CSS"],
     gitLink:
       "https://github.com/christofa/hgc-webpage",
-    sitLink: "https://conarrate.netlify.app/",
+    sitLink: "#",
     isCompleted: false,
   },
   {
@@ -161,69 +161,71 @@ function Projects() {
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 lg:gap-6 md:gap-6 max-w-7xl animate-pop-in">
             {projects.map((projects) => (
               <Card.Root
-                // maxW="260px"
                 overflow="hidden"
-                className="max-w-[179px] lg:max-w-[260px] md:max-w-[260px] shadow-md"
+                className="group relative flex h-full max-w-[179px] lg:max-w-[260px] md:max-w-[260px] shadow-md"
                 key={projects.id}
                 bg={{ base: "white", _dark: "#1E1E1E" }}
               >
-                <Image
-                  src={projects.image}
-                  alt="Green double couch with wooden legs"
-                  className="relative h-[200px]"
-                />
-
-                <span
-                  className={`border-2 absolute top-2 right-2 px-2 py-1 rounded-full text-sm ${
-                    projects.isCompleted
-                      ? "bg-green-100 text-green-800"
-                      : "bg-red-100 text-red-800"
-                  }`}
-                >
-                  {projects.isCompleted ? "Completed" : "In Progress"}
-                </span>
-
-                <Card.Body gap="2" className="p-3 lg:p-5 md:p-5">
-                  <Card.Title className="font-semibold">
-                    {projects.title}
-                  </Card.Title>
-                  <Card.Description className="text-sm mb-1">
-                    {projects.description}
-                  </Card.Description>
-                  <Card.Description className="flex flex-wrap items-center gap-2">
-                    {projects.stacks.map((stacks) => (
-                      <div
-                        key={stacks}
-                        className="border border-[#4f46e5] text-[9px] lg:text-[12px] font-semibold p-[4px] rounded text-[#4f46e5]"
-                      >
-                        <p>{stacks}</p>
-                      </div>
-                    ))}
-                  </Card.Description>
-                  <div className="flex lg:flex md:flex items-center lg:gap-4 md:gap-4 gap-1 mt-3">
-                    <a
-                      href={projects.gitLink}
-                      target="_blank"
-                      className="text-center rounded lg:px-2 md:px-2 w-[50%] lg:w-[46%] md:w-[46%] lg:mb-0 md:mb-0 lg:text-xs text-[12px] font-semibold bg-[#4f46e5] text-white transition-all duration-200 hover:scale-105 hover:bg-[#4f46e5] active:scale-95"
+                <div className="flex h-full w-full flex-col">
+                  <div className="relative h-[140px] lg:h-[180px] md:h-[180px] w-full overflow-hidden">
+                    <Image
+                      src={projects.image}
+                      alt="Project cover image"
+                      className="h-full w-full object-cover"
+                    />
+                    <span
+                      className={`border-2 absolute top-2 right-2 px-2 py-1 rounded-full text-xs lg:text-sm ${
+                        projects.isCompleted
+                          ? "bg-green-100 text-green-800"
+                          : "bg-red-100 text-red-800"
+                      }`}
                     >
-                      <Button className="">
-                        {" "}
-                        <FiGithub className="w-[12px] h-[12px] lg:w-[16px] h-[16px] md:w-[16px] h-[16px]" />
-                        Code
-                      </Button>
-                    </a>
-                    <a
-                      href={projects.sitLink}
-                      target="_blank"
-                      className="text-center border border-[#4f46e5] rounded lg:px-2 w-[50%] lg:w-[46%] md:w-[46%] lg:mt-0 md:mt-0  lg:text-xs text-[12px] font-semibold transition-all duration-200 hover:scale-105 hover:bg-[#4f46e5] active:scale-95"
-                    >
-                      <Button>
-                        <MdArrowOutward className="w-[12px] h-[12px] lg:w-[16px] h-[16px] md:w-[16px] h-[16px]" />
-                        Demo
-                      </Button>
-                    </a>
+                      {projects.isCompleted ? "Completed" : "In Progress"}
+                    </span>
                   </div>
-                </Card.Body>
+
+                  <Card.Body gap="2" className="flex flex-1 flex-col p-3 lg:p-5 md:p-5">
+                    <Card.Title className="font-semibold min-h-[40px] lg:min-h-[48px]">
+                      {projects.title}
+                    </Card.Title>
+                    <Card.Description className="text-sm mb-2 line-clamp-3 min-h-[60px] lg:min-h-[72px]">
+                      {projects.description}
+                    </Card.Description>
+                    <Card.Description className="mb-3 flex flex-wrap items-center gap-2 min-h-[40px]">
+                      {projects.stacks.map((stacks) => (
+                        <div
+                          key={stacks}
+                          className="border border-[#4f46e5] text-[9px] lg:text-[12px] font-semibold px-2 py-1 rounded text-[#4f46e5]"
+                        >
+                          <p>{stacks}</p>
+                        </div>
+                      ))}
+                    </Card.Description>
+
+                    <div className="mt-auto flex items-center gap-2 lg:gap-4 md:gap-4">
+                      <a
+                        href={projects.gitLink}
+                        target="_blank"
+                        className="w-1/2"
+                      >
+                        <Button className="w-full text-[12px] lg:text-xs font-semibold bg-[#4f46e5] text-white transition-all duration-200 hover:scale-105 hover:bg-[#4f46e5] active:scale-95 flex items-center justify-center gap-2">
+                          <FiGithub className="w-[12px] h-[12px] lg:w-[16px] lg:h-[16px] md:w-[16px] md:h-[16px]" />
+                          Code
+                        </Button>
+                      </a>
+                      <a
+                        href={projects.sitLink}
+                        target="_blank"
+                        className="w-1/2"
+                      >
+                        <Button className="w-full text-[12px] lg:text-xs font-semibold border border-[#4f46e5] transition-all duration-200 hover:scale-105 hover:bg-[#4f46e5] active:scale-95 flex items-center justify-center gap-2">
+                          <MdArrowOutward className="w-[12px] h-[12px] lg:w-[16px] lg:h-[16px] md:w-[16px] md:h-[16px]" />
+                          Demo
+                        </Button>
+                      </a>
+                    </div>
+                  </Card.Body>
+                </div>
               </Card.Root>
             ))}
           </div>
