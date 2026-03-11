@@ -69,55 +69,60 @@ const projects = [
 function Projects2() {
   return (
     <div className='font-inter animate-pop-in'>
-      <div className="grid grid-cols-2 md:md:grid-cols-3 lg:grid-cols-4 gap-2 lg:gap-6 md:gap-6 max-w-7xl">
+      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 lg:gap-6 md:gap-6 max-w-7xl">
                 {projects.map((projects) => (
                   <Card.Root
-                    maxW="260px"
                     overflow="hidden"
-                    className='shadow-md'
+                    className="group relative flex h-full max-w-[179px] lg:max-w-[260px] md:max-w-[260px] shadow-md"
                     key={projects.id}
                     bg={{ base: "white", _dark: "#1E1E1E" }}
                   >
-                    <Image
-                      src={projects.image}
-                      alt="Green double couch with wooden legs"
-                      className="relative"
-                      
-                    />
-      
-                    <span
-                      className={`border-2 absolute top-2 right-2 px-2 py-1 rounded-full text-xs lg:text-sm md:text-sm ${
-                        projects.isCompleted
-                          ? "bg-green-100 text-green-800"
-                          : "bg-red-100 text-red-800"
-                      }`}
-                    >
-                      {projects.isCompleted ? "Completed" : "In Progress"}
-                    </span>
-      
-                    <Card.Body gap="1" className="p-3 lg:p-5 md:p-5">
-                      <Card.Title className="font-semibold text-sm lg:text-sm md:text-sm">
-                        {projects.title}
-                      </Card.Title>
-                      <Card.Description className="text-[10px] lg:text-xs md:text-xs mb-1">
-                        {projects.description}
-                      </Card.Description>
-                      <Card.Description className="flex flex-wrap items-center gap-2">
-                        {projects.stacks.map((stacks) => (
-                          <div
-                            key={stacks}
-                            className="border border-[#4f46e5] text-[9px] lg:text-[12px] font-semibold p-[5px] rounded text-[#4f46e5]"
-                          >
-                            <p>{stacks}</p>
-                          </div>
-                        ))}
-                      </Card.Description>
-                      <div className=" flex items-center gap-2 mt-3">
-                        <a href={projects.link} target='blank'>
-                          <Button className="rounded px-2 text-[12px] lg:text-xs md:text-xs font-semibold bg-[#4f46e5] text-white transition-all duration-200 hover:scale-105 hover:bg-[#4f46e5] active:scale-95"> <MdArrowOutward className="w-[12px] h-[12px] lg:w-[16px] h-[16px] md:w-[16px] h-[16px]"/> Read Article </Button> 
-                        </a>
+                    <div className="flex h-full w-full flex-col">
+                      <div className="relative h-[140px] lg:h-[180px] md:h-[180px] w-full overflow-hidden">
+                        <Image
+                          src={projects.image}
+                          alt="Article cover image"
+                          className="h-full w-full object-cover"
+                        />
+                        <span
+                          className={`border-2 absolute top-2 right-2 px-2 py-1 rounded-full text-xs lg:text-sm ${
+                            projects.isCompleted
+                              ? "bg-green-100 text-green-800"
+                              : "bg-red-100 text-red-800"
+                          }`}
+                        >
+                          {projects.isCompleted ? "Completed" : "In Progress"}
+                        </span>
                       </div>
-                    </Card.Body>
+
+                      <Card.Body gap="1" className="flex flex-1 flex-col p-3 lg:p-5 md:p-5">
+                        <Card.Title className="font-semibold text-sm min-h-[36px] lg:min-h-[44px]">
+                          {projects.title}
+                        </Card.Title>
+                        <Card.Description className="text-[10px] lg:text-xs md:text-xs mb-2 line-clamp-3 min-h-[54px] lg:min-h-[60px]">
+                          {projects.description}
+                        </Card.Description>
+                        <Card.Description className="mb-3 flex flex-wrap items-center gap-2 min-h-[36px]">
+                          {projects.stacks.map((stacks) => (
+                            <div
+                              key={stacks}
+                              className="border border-[#4f46e5] text-[9px] lg:text-[12px] font-semibold px-2 py-1 rounded text-[#4f46e5]"
+                            >
+                              <p>{stacks}</p>
+                            </div>
+                          ))}
+                        </Card.Description>
+
+                        <div className="mt-auto flex items-center gap-2">
+                          <a href={projects.link} target="_blank" className="w-full">
+                            <Button className="w-full rounded text-[12px] lg:text-xs md:text-xs font-semibold bg-[#4f46e5] text-white transition-all duration-200 hover:scale-105 hover:bg-[#4f46e5] active:scale-95 flex items-center justify-center gap-2">
+                              <MdArrowOutward className="w-[12px] h-[12px] lg:w-[16px] lg:h-[16px] md:w-[16px] md:h-[16px]"/> 
+                              Read Article
+                            </Button>
+                          </a>
+                        </div>
+                      </Card.Body>
+                    </div>
                   </Card.Root>
                 ))}
               </div>
