@@ -10,36 +10,36 @@ const projects = [
       id: 1,
     image:
       "/images/Proj-1.svg",
-    title: "Conarative",
-    description: "An AI application where you can tell your stories",
-    stacks: ["React.js", "TypeScript", "ShadCn", "Vite", "Tailwind CSS"],
+    title: "Synnex Website",
+    description: "The official website for Synnex, a music distribution, A&R and management company",
+    stacks: ["Next.js", "TypeScript", "ShadCn", "Paystack", "Tailwind CSS"],
     gitLink:
       "https://github.com/code-z2/conarrate/blob/main/apps/client-app/tailwind.config.js",
-    sitLink: "https://conarrate.netlify.app/",
+    sitLink: "https://synnexent.com/",
     isCompleted: true,
   },
   {
     id: 2,
     image:
       "/images/Proj-1.svg",
-    title: "Conarative",
-    description: "An AI application where you can tell your stories",
-    stacks: ["React.js", "TypeScript", "ShadCn", "Vite", "Tailwind CSS"],
+    title: "High Grace College Website",
+    description: "The Official website for High Grace College, a secondary school in Nigeria",
+    stacks: ["Next.js", "TypeScript", "HeroUI", "MongoDB", "Cloudinary", "Tailwind CSS"],
     gitLink:
-      "https://github.com/code-z2/conarrate/blob/main/apps/client-app/tailwind.config.js",
+      "https://github.com/christofa/hgc-webpage",
     sitLink: "https://conarrate.netlify.app/",
-    isCompleted: true,
+    isCompleted: false,
   },
   {
     id: 3,
     image:
       "/images/Proj-1.svg",
-    title: "Conarative",
-    description: "An AI application where you can tell your stories",
-    stacks: ["React.js", "TypeScript", "ShadCn", "Vite", "Tailwind CSS"],
+    title: "EchoBase",
+    description: "A scalable voice-enabled AI platform built with Supabase, Next.js, and modern AI tools for conversational voice interactions.",
+    stacks: ["React.js", "TypeScript", "HeroUI", "Supabase", "Groq", "Deepgram", "Tailwind CSS"],
     gitLink:
-      "https://github.com/code-z2/conarrate/blob/main/apps/client-app/tailwind.config.js",
-    sitLink: "https://conarrate.netlify.app/",
+      "https://github.com/christofa/voice-ai-webpage",
+    sitLink: "https://echobase-theta.vercel.app/",
     isCompleted: true,
   },
   {
