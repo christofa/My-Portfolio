@@ -46,7 +46,7 @@ const expertise = [
     id: 6,
     title: "Web3 Development",
     description: "Building decentralized applications and smart contracts",
-    icon: <IoMdCode className="text-[#4f46e5] w-[20px] h-[20px] lg:w-[25px] h-[25px] md:w-[25px] h-[25px]" />,
+    icon: <SiWeb3Dotjs className="text-[#4f46e5] w-[20px] h-[20px] lg:w-[25px] h-[25px] md:w-[25px] h-[25px]" />,
   },
 
 ]
@@ -116,74 +116,19 @@ function Home() {
         <div className="my-20 mx-4 lg:mx-20 md:mx-8">
           <h2 className="text-center text-2xl font-bold mb-8">My Expertise</h2>
           <div className="grid grid-cols-2 lg:grid-cols-3 md:grid-cols-3 gap-2 lg:gap-[30px] md:gap-[15px] lg:mx-[40px]">
-            <div className="flex flex-start gap-2 border border-[#4f46e5] rounded-xl shadow-xl p-3 w-[100%] lg:w-[320px] md:w-[100%] transition-all duration-200 hover:-translate-y-1 hover:shadow-xl">
-              <FiLayout className="text-[#4f46e5] w-[25px] h-[25px] lg:w-[25px] h-[25px] md:w-[25px] h-[25px]" />
-              <div>
-                <h3 className="text-[12px] lg:text-[16px] md:text-[16px] font-bold">
-                  Back-end Development
-                </h3>
-                <p className="lg:w-full md:w-full text-[10px] lg:text-sm md:text-sm text-[#666f77]">
-                  Ensuring working functionalities across all devices
-                </p>
+            {expertise.map((item) => (
+              <div key={item.id} className="flex flex-start gap-2 border border-[#4f46e5] rounded-xl shadow-xl p-3 w-[100%] lg:w-[320px] md:w-[100%] transition-all duration-200 hover:-translate-y-1 hover:shadow-xl">
+                {item.icon}
+                <div>
+                  <h3 className="text-[12px] lg:text-[16px] md:text-[16px] font-bold">
+                    {item.title}
+                  </h3>
+                  <p className="lg:w-full md:w-full text-[10px] lg:text-sm md:text-sm text-[#666f77]">
+                    {item.description}
+                  </p>
+                </div>
               </div>
-            </div>
-            <div className="flex flex-start gap-2 border border-[#4f46e5] rounded-xl shadow-xl p-3 w-[100%] lg:w-[320px] md:w-[100%] transition-all duration-200 hover:-translate-y-1 hover:shadow-xl">
-              <div>
-                <IoMdCode className="text-[#4f46e5] w-[20px] h-[20px] lg:w-[25px] h-[25px] md:w-[25px] h-[25px]" />
-              </div>
-              <div className="flex flex-col">
-                <h3 className="text-[12px] lg:text-[16px] md:text-[16px] font-bold">
-                  Front-end Development
-                </h3>
-                <p className="lg:w-full md:w-full text-[10px] lg:text-sm md:text-sm text-[#666f77]">
-                  Building robust and scalable web applications
-                </p>
-              </div>
-            </div>
-            <div className="flex flex-start gap-2 border border-[#4f46e5] rounded-xl shadow-xl p-3 w-[100%] lg:w-[320px] md:w-[100%] transition-all duration-200 hover:-translate-y-1 hover:shadow-xl">
-              <FaFigma className="text-[#4f46e5] w-[20px] h-[20px] lg:w-[25px] h-[25px] md:w-[25px] h-[25px]" />
-              <div>
-                <h3 className="text-[12px] lg:text-[16px] md:text-[16px] font-bold">
-                  UI/UX Design
-                </h3>
-                <p className="lg:w-full md:w-full text-[10px] lg:text-sm md:text-sm text-[#666f77]">
-                  Crafting intutive and engaging user interfaces
-                </p>
-              </div>
-            </div>
-            <div className="flex flex-start gap-2 border border-[#4f46e5] rounded-xl shadow-xl p-3 w-[100%] lg:w-[320px] md:w-[100%] transition-all duration-200 hover:-translate-y-1 hover:shadow-xl">
-              <VscLayoutPanelOff className="text-[#4f46e5] w-[20px] h-[20px] lg:w-[25px] h-[25px] md:w-[25px] h-[25px]" />
-              <div>
-                <h3 className="text-[12px] lg:text-[16px] md:text-[16px] font-bold">
-                  Technical Writing
-                </h3>
-                <p className="w-32 lg:w-full md:w-full text-[10px] lg:text-sm md:text-sm text-[#666f77]">
-                  Creating clear and concise documentation
-                </p>
-              </div>
-            </div>
-            <div className="flex flex-start gap-2 border border-[#4f46e5] rounded-xl shadow-xl p-3 w-[100%] lg:w-[320px] md:w-[100%] transition-all duration-200 hover:-translate-y-1 hover:shadow-xl">
-              <AiOutlineApi className="text-[#4f46e5] w-[20px] h-[20px] lg:w-[25px] h-[25px] md:w-[25px] h-[25px]" />
-              <div>
-                <h3 className="text-[12px] lg:text-[16px] md:text-[16px] font-bold">
-                  API Integration
-                </h3>
-                <p className="lg:w-full md:w-full text-[10px] lg:text-sm md:text-sm text-[#666f77]">
-                  Connecting diverse systems for seamless data flow
-                </p>
-              </div>
-            </div>
-            <div className="flex flex-start gap-2 border border-[#4f46e5] rounded-xl shadow-xl p-3 w-[100%] lg:w-[320px] md:w-[100%] transition-all duration-200 hover:-translate-y-1 hover:shadow-xl">
-              <SiWeb3Dotjs className="text-[#4f46e5] w-[20px] h-[20px] lg:w-[25px] h-[25px] md:w-[25px] h-[25px]" />
-              <div>
-                <h3 className="text-[12px] lg:text-[16px] md:text-[16px] font-bold">
-                  Project Management
-                </h3>
-                <p className="lg:w-full md:w-full text-[10px] lg:text-sm md:text-sm text-[#666f77]">
-                  Organizing and leading projects to success
-                </p>
-              </div>
-            </div>
+            ))}
           </div>
         </div>
 
