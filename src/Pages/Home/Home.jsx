@@ -11,6 +11,46 @@ import { VscLayoutPanelOff } from "react-icons/vsc";
 import { AiOutlineApi } from "react-icons/ai";
 import { SiWeb3Dotjs } from "react-icons/si";
 
+const expertise = [
+  {
+    id: 1,
+    title: "Frontend Development",
+    description: "Building robust and scalable web applications",
+    icon: <IoMdCode className="text-[#4f46e5] w-[20px] h-[20px] lg:w-[25px] h-[25px] md:w-[25px] h-[25px]" />,
+  },
+    {
+    id: 2,
+    title: "Backend Development",
+    description: "Ensuring working functionalities across all devices",
+    icon: <FiLayout className="text-[#4f46e5] w-[25px] h-[25px] lg:w-[25px] h-[25px] md:w-[25px] h-[25px]" />,
+  },
+    {
+    id: 3,
+    title: "UI/UX Design",
+    description: "Creating intuitive and engaging user experiences",
+    icon: <FaFigma className="text-[#4f46e5] w-[20px] h-[20px] lg:w-[25px] h-[25px] md:w-[25px] h-[25px]" />,
+  },
+    {
+    id: 4,
+    title: "Technical Writing",
+    description: "Creating clear and concise technical documentation",
+    icon: <VscLayoutPanelOff className="text-[#4f46e5] w-[20px] h-[20px] lg:w-[25px] h-[25px] md:w-[25px] h-[25px]" />,
+  },
+    {
+    id: 5,
+    title: "API Integration",
+    description: "Connecting diverse systems for seamless data flow",
+    icon:  <AiOutlineApi className="text-[#4f46e5] w-[20px] h-[20px] lg:w-[25px] h-[25px] md:w-[25px] h-[25px]" />,
+  },
+    {
+    id: 6,
+    title: "Web3 Development",
+    description: "Building decentralized applications and smart contracts",
+    icon: <IoMdCode className="text-[#4f46e5] w-[20px] h-[20px] lg:w-[25px] h-[25px] md:w-[25px] h-[25px]" />,
+  },
+
+]
+
 function Home() {
   return (
     <Layout>
