@@ -30,6 +30,14 @@ const expertise = [
   },
   {
     id: 3,
+    title: "Web3 Development",
+    description: "Building decentralized applications and smart contracts",
+    icon: (
+      <SiWeb3Dotjs className="text-[#4f46e5] w-[20px] h-[20px] lg:w-[25px] h-[25px] md:w-[25px] h-[25px]" />
+    ),
+  },
+  {
+    id: 4,
     title: "UI/UX Design",
     description: "Creating intuitive and engaging user experiences",
     icon: (
@@ -37,7 +45,7 @@ const expertise = [
     ),
   },
   {
-    id: 4,
+    id: 5,
     title: "Technical Writing",
     description: "Creating clear and concise technical documentation",
     icon: (
@@ -45,19 +53,11 @@ const expertise = [
     ),
   },
   {
-    id: 5,
+    id: 6,
     title: "API Integration",
     description: "Connecting diverse systems for seamless data flow",
     icon: (
       <AiOutlineApi className="text-[#4f46e5] w-[20px] h-[20px] lg:w-[25px] h-[25px] md:w-[25px] h-[25px]" />
-    ),
-  },
-  {
-    id: 6,
-    title: "Web3 Development",
-    description: "Building decentralized applications and smart contracts",
-    icon: (
-      <SiWeb3Dotjs className="text-[#4f46e5] w-[20px] h-[20px] lg:w-[25px] h-[25px] md:w-[25px] h-[25px]" />
     ),
   },
 ];
