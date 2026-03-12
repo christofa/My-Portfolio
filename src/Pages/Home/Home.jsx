@@ -16,40 +16,51 @@ const expertise = [
     id: 1,
     title: "Frontend Development",
     description: "Building robust and scalable web applications",
-    icon: <IoMdCode className="text-[#4f46e5] w-[20px] h-[20px] lg:w-[25px] h-[25px] md:w-[25px] h-[25px]" />,
+    icon: (
+      <IoMdCode className="text-[#4f46e5] w-[20px] h-[20px] lg:w-[25px] h-[25px] md:w-[25px] h-[25px]" />
+    ),
   },
-    {
+  {
     id: 2,
     title: "Backend Development",
     description: "Ensuring working functionalities across all devices",
-    icon: <FiLayout className="text-[#4f46e5] w-[25px] h-[25px] lg:w-[25px] h-[25px] md:w-[25px] h-[25px]" />,
+    icon: (
+      <FiLayout className="text-[#4f46e5] w-[25px] h-[25px] lg:w-[25px] h-[25px] md:w-[25px] h-[25px]" />
+    ),
   },
-    {
+  {
     id: 3,
     title: "UI/UX Design",
     description: "Creating intuitive and engaging user experiences",
-    icon: <FaFigma className="text-[#4f46e5] w-[20px] h-[20px] lg:w-[25px] h-[25px] md:w-[25px] h-[25px]" />,
+    icon: (
+      <FaFigma className="text-[#4f46e5] w-[20px] h-[20px] lg:w-[25px] h-[25px] md:w-[25px] h-[25px]" />
+    ),
   },
-    {
+  {
     id: 4,
     title: "Technical Writing",
     description: "Creating clear and concise technical documentation",
-    icon: <VscLayoutPanelOff className="text-[#4f46e5] w-[20px] h-[20px] lg:w-[25px] h-[25px] md:w-[25px] h-[25px]" />,
+    icon: (
+      <VscLayoutPanelOff className="text-[#4f46e5] w-[20px] h-[20px] lg:w-[25px] h-[25px] md:w-[25px] h-[25px]" />
+    ),
   },
-    {
+  {
     id: 5,
     title: "API Integration",
     description: "Connecting diverse systems for seamless data flow",
-    icon:  <AiOutlineApi className="text-[#4f46e5] w-[20px] h-[20px] lg:w-[25px] h-[25px] md:w-[25px] h-[25px]" />,
+    icon: (
+      <AiOutlineApi className="text-[#4f46e5] w-[20px] h-[20px] lg:w-[25px] h-[25px] md:w-[25px] h-[25px]" />
+    ),
   },
-    {
+  {
     id: 6,
     title: "Web3 Development",
     description: "Building decentralized applications and smart contracts",
-    icon: <SiWeb3Dotjs className="text-[#4f46e5] w-[20px] h-[20px] lg:w-[25px] h-[25px] md:w-[25px] h-[25px]" />,
+    icon: (
+      <SiWeb3Dotjs className="text-[#4f46e5] w-[20px] h-[20px] lg:w-[25px] h-[25px] md:w-[25px] h-[25px]" />
+    ),
   },
-
-]
+];
 
 function Home() {
   return (
@@ -117,7 +128,10 @@ function Home() {
           <h2 className="text-center text-2xl font-bold mb-8">My Expertise</h2>
           <div className="grid grid-cols-2 lg:grid-cols-3 md:grid-cols-3 gap-2 lg:gap-[30px] md:gap-[15px] lg:mx-[40px]">
             {expertise.map((item) => (
-              <div key={item.id} className="flex flex-start gap-2 border border-[#4f46e5] rounded-xl shadow-xl p-3 w-[100%] lg:w-[320px] md:w-[100%] transition-all duration-200 hover:-translate-y-1 hover:shadow-xl">
+              <div
+                key={item.id}
+                className="flex flex-start gap-2 border border-[#4f46e5] rounded-xl shadow-xl p-3 w-[100%] lg:w-[320px] md:w-[100%] transition-all duration-200 hover:-translate-y-1 hover:shadow-xl"
+              >
                 {item.icon}
                 <div>
                   <h3 className="text-[12px] lg:text-[16px] md:text-[16px] font-bold">
