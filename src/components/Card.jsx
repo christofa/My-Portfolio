@@ -7,6 +7,22 @@ export default function card() {
     <div className="w-full grid grid-cols-2 lg:grid-cols-3 md:grid-cols-3 gap-2 lg:gap-[30px] md:gap-[15px] my-7 font-inter"> 
       <Card.Root maxW="xl" overflow="hidden" className="shadow-md" bg={{ base: "white", _dark: "#1E1E1E" }}>
         <Image
+          src="/images/Proj-8.svg"
+          alt="Green double couch with wooden legs"
+          className="w-full lg:w-full h-[135px] lg:h-[260px] md:h-[250px]"
+        />
+        <Card.Body gap="2" className="w-[100%] lg:w-full md:w-full p-3 lg:p-5 md:p-5">
+          <Card.Title className="text-[14px] lg:text-[18px] md:text-[18px]  font-semibold">ContestLedger</Card.Title>
+          <Card.Description className="text-[10px] lg:text-sm md:text-sm text-[#666f77]">
+            A decentralized application that allows users to create and manage contests, track entries, and view results.
+          </Card.Description>
+        </Card.Body>
+        <Card.Footer className="p-3 lg:p-5 md:p-5">
+          <Link to="/projects" className="text-[#4f46e5] text-sm ">View Details</Link>
+        </Card.Footer>
+      </Card.Root> 
+      <Card.Root maxW="xl" overflow="hidden" className="shadow-md" bg={{ base: "white", _dark: "#1E1E1E" }}>
+        <Image
           src="/images/synnex logo.PNG"
           alt="Green double couch with wooden legs"
           className="w-full lg:w-full h-[135px] lg:h-[260px] md:h-[250px]"
