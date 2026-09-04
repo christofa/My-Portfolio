@@ -1,5 +1,4 @@
-import React from "react";
-import { Button, Card, Image, Text } from "@chakra-ui/react";
+import { Card, Image } from "@chakra-ui/react";
 import { Link } from "react-router";
 
 export default function card() {
@@ -9,7 +8,7 @@ export default function card() {
         <Image
           src="/images/contestledger.png"
           alt="Green double couch with wooden legs"
-          className="w-full lg:w-full h-[135px] lg:h-[260px] md:h-[250px]"
+          className="w-full aspect-[16/10] object-cover object-center"
         />
         <Card.Body gap="2" className="w-[100%] lg:w-full md:w-full p-3 lg:p-5 md:p-5">
           <Card.Title className="text-[14px] lg:text-[18px] md:text-[18px]  font-semibold">ContestLedger</Card.Title>
@@ -25,7 +24,7 @@ export default function card() {
         <Image
           src="/images/synnex logo.PNG"
           alt="Green double couch with wooden legs"
-          className="w-full lg:w-full h-[135px] lg:h-[260px] md:h-[250px]"
+          className="w-full aspect-[16/10] object-cover object-center"
         />
         <Card.Body gap="2" className="w-[100%] lg:w-full md:w-full p-3 lg:p-5 md:p-5 p-2 lg:p-5 md:p-5">
           <Card.Title className="text-[14px] lg:text-[18px] md:text-[18px]  font-semibold">Synnex Website
@@ -42,7 +41,7 @@ export default function card() {
         <Image
           src="/images/Echobase.png"
           alt="Green double couch with wooden legs"
-          className="w-full lg:w-full h-[135px] lg:h-[260px] md:h-[250px]"
+          className="w-full aspect-[16/10] object-cover object-center"
         />
         <Card.Body gap="2" className="w-[100%] lg:w-full md:w-full p-3 lg:p-5 md:p-5">
           <Card.Title className="text-[14px] lg:text-[18px] md:text-[18px]  font-semibold">EchoBase</Card.Title>
@@ -58,7 +57,7 @@ export default function card() {
         <Image
           src="/images/HGC-Logo.jpg"
           alt="Green double couch with wooden legs"
-          className="w-full lg:w-full h-[135px] lg:h-[260px] md:h-[250px]"
+          className="w-full aspect-[16/10] object-cover object-center"
         />
         <Card.Body gap="2" className="w-[100%] lg:w-full md:w-full p-3 lg:p-5 md:p-5">
           <Card.Title className="text-[14px] lg:text-[18px] md:text-[18px]  font-semibold">High Grace College Website</Card.Title>
@@ -74,7 +73,7 @@ export default function card() {
         <Image
           src="/images/3rendy.png"
           alt="Green double couch with wooden legs"
-          className="w-full lg:w-full h-[135px] lg:h-[260px] md:h-[250px]"
+          className="w-full aspect-[16/10] object-cover object-center"
         />
         <Card.Body gap="2" className="w-[100%] lg:w-full md:w-full p-3 lg:p-5 md:p-5">
           <Card.Title className="text-[14px] lg:text-[18px] md:text-[18px]  font-semibold">3rendy</Card.Title>
@@ -90,12 +89,12 @@ export default function card() {
         <Image
           src="/images/Proj-3.svg"
           alt="Green double couch with wooden legs"
-          className="w-full lg:w-full h-[135px] lg:h-[260px] md:h-[250px]"
+          className="w-full aspect-[16/10] object-contain bg-[#f8fafc]"
         />
         <Card.Body gap="2" className="w-[100%] lg:w-full md:w-full p-3 lg:p-5 md:p-5">
           <Card.Title className="text-[14px] lg:text-[18px] md:text-[18px]  font-semibold">Therapy-Buddy</Card.Title>
           <Card.Description className="text-[10px] lg:text-sm md:text-sm text-[#666f77]">
-           Built an AI therapy Chatbot created for students' mental health.
+           Built an AI therapy Chatbot created for students&apos; mental health.
           </Card.Description>
         </Card.Body>
         <Card.Footer className="p-3 lg:p-5 md:p-5">

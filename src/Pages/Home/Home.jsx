@@ -70,14 +70,14 @@ function Home() {
         <div className="flex justify-between items-center mb-28 mx-4 lg:mx-20 md:mx-8 animate-fade-in-up">
           <div className="w-[600px]">
             <div className="block lg:hidden md:hidden">
-              <img
-                src="/images/My-Image.jpg"
-                alt="chris"
-                className="w-[60px] rounded-full border-4 border-[#4f46e5] mb-4"
-              />
+            <img
+              src="/images/My-Image.jpg"
+              alt="chris"
+              className="w-[60px] h-[60px] object-cover rounded-full border-4 border-[#4f46e5] mb-4"
+            />
             </div>
             <h1 className="text-4xl lg:text-5xl md:text-[45px] font-bold">
-              Hi, I'm <span className="text-[#4f46e5]">Christopher Okoro</span>.
+              Hi, I&apos;m <span className="text-[#4f46e5]">Christopher Okoro</span>.
               Creative Developer, Technical Writer and Designer.
             </h1>{" "}
             <br />
@@ -108,7 +108,7 @@ function Home() {
             <img
               src="/images/My-Image.jpg"
               alt="chris"
-              className="lg:w-[400px] md:w-[320px] rounded-3xl"
+              className="w-full max-w-[400px] h-[420px] object-cover object-top rounded-3xl"
             />
           </div>
         </div>
@@ -153,7 +153,7 @@ function Home() {
             <img
               src="/images/My-Image.jpg"
               alt="chris"
-              className="w-[700px] h-[110px] lg:h-[150px] lg:w-[380px] md:w-[380px] rounded-full border-4 border-[#4f46e5]"
+              className="w-full max-w-[380px] aspect-square object-cover object-top rounded-full border-4 border-[#4f46e5]"
             />
           </div>
           <div>

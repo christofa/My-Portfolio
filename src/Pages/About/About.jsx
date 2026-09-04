@@ -114,7 +114,31 @@ function About() {
             <div className="my-5 text-[13px] lg:text-sm md:text-sm">
               <div className="flex justify-between items-center ml-5">
                 <h3 className="text-l font-semibold">
-                  IT Engineer <br />
+                  Blockchain Developer (Contract) — CKB Builder Program <br />
+                  <span className="italic text-[10px] lg:text-xs md:text-xs">
+                    Nervos Network | Remote
+                  </span>
+                </h3>
+                <p className="text-[#666f77]">2026 - Present</p>
+              </div>
+
+              <p className="text-[#a8a9a8] ml-8">
+                Selected for the Nervos CKB Builder Program — a contracted
+                engagement with the Nervos team to learn CKB infrastructure in
+                depth and ship production-grade tooling on the network.
+              </p>
+              <p className="text-[#a8a9a8] ml-8">
+                Developed ContestLedger, a decentralised contest platform
+                deployed on CKB testnet; implemented on-chain vote signature
+                verification, shannon-based reward distribution, and CKB
+                transaction verification prior to any database writes.
+              </p>
+            </div>
+
+            <div className="my-5 text-[13px] lg:text-sm md:text-sm">
+              <div className="flex justify-between items-center ml-5">
+                <h3 className="text-l font-semibold">
+                  Design & Technology Lead <br />
                   <span className="italic text-[10px] lg:text-xs md:text-xs">
                     Synnex Entertainment | Hybrid
                   </span>

@@ -1,7 +1,5 @@
-import React from 'react'
-import { Button, Card, Image, Text } from "@chakra-ui/react";
+import { Button, Card, Image } from "@chakra-ui/react";
 import { MdArrowOutward } from "react-icons/md";
-import { FiGithub } from "react-icons/fi";
 
 const projects = [
     {
@@ -69,20 +67,20 @@ const projects = [
 function Projects2() {
   return (
     <div className='font-inter animate-pop-in'>
-      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 lg:gap-6 md:gap-6 max-w-7xl">
+      <div className="mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 lg:gap-6 max-w-7xl">
                 {projects.map((projects) => (
                   <Card.Root
                     overflow="hidden"
-                    className="group relative flex h-full max-w-[179px] lg:max-w-[260px] md:max-w-[260px] shadow-md"
+                    className="group relative flex h-full w-full shadow-md"
                     key={projects.id}
                     bg={{ base: "white", _dark: "#1E1E1E" }}
                   >
                     <div className="flex h-full w-full flex-col">
-                      <div className="relative h-[140px] lg:h-[180px] md:h-[180px] w-full overflow-hidden">
+                      <div className="relative aspect-[16/10] w-full overflow-hidden">
                         <Image
                           src={projects.image}
                           alt="Article cover image"
-                          className="h-full w-full object-cover"
+                          className="h-full w-full object-cover object-center"
                         />
                         <span
                           className={`border-2 absolute top-2 right-2 px-2 py-1 rounded-full text-xs lg:text-sm ${
@@ -114,7 +112,7 @@ function Projects2() {
                         </Card.Description>
 
                         <div className="mt-auto flex items-center gap-2">
-                          <a href={projects.link} target="_blank" className="w-full">
+                          <a href={projects.link} target="_blank" rel="noreferrer" className="w-full">
                             <Button className="w-full rounded text-[12px] lg:text-xs md:text-xs font-semibold bg-[#4f46e5] text-white transition-all duration-200 hover:scale-105 hover:bg-[#4f46e5] active:scale-95 flex items-center justify-center gap-2">
                               <MdArrowOutward className="w-[12px] h-[12px] lg:w-[16px] lg:h-[16px] md:w-[16px] md:h-[16px]"/> 
                               Read Article

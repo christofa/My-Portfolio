@@ -1,51 +1,91 @@
 import Layout from "@/components/Layout";
 import Projects2 from "./Projects2";
-import { Button, Card, Image, Text } from "@chakra-ui/react";
+import { Button, Card, Image } from "@chakra-ui/react";
 import { MdArrowOutward } from "react-icons/md";
 import { FiGithub } from "react-icons/fi";
 import { useState } from "react";
 
 const projects = [
   {
-      id: 1,
-    image:
-      "/images/synnex logo.PNG",
-    title: "Synnex Website",
-    description: "The official website for Synnex, a music distribution, A&R and management company",
-    stacks: ["Next.js", "TypeScript", "ShadCn", "Paystack", "Tailwind CSS"],
-    gitLink:
-      "https://github.com/christofa/synnex-webpage",
-    sitLink: "https://synnexent.com/",
+    id: 1,
+    image: "/images/contestledger.png",
+    title: "ConstestLedger",
+    description:
+      "A decentralized application that allows users to create and manage contests, track entries, and view results.",
+    stacks: ["Next.js", "TypeScript", "ShadCn", "CKB Testnet", "Turso", "Better-Auth"],
+    gitLink: "https://github.com/christofa/contestledger",
+    sitLink: "https://contestledger.vercel.app/",
     isCompleted: true,
   },
   {
     id: 2,
-    image:
-      "/images/HGC-Logo.jpg",
-    title: "High Grace College Website",
-    description: "The Official website for High Grace College, a secondary school in Nigeria",
-    stacks: ["Next.js", "TypeScript", "HeroUI", "MongoDB", "Cloudinary", "Tailwind CSS"],
-    gitLink:
-      "https://github.com/christofa/hgc-webpage",
-    sitLink: "#",
-    isCompleted: false,
+    image: "/images/synnex logo.PNG",
+    title: "Synnex Website",
+    description:
+      "The official website for Synnex, a music distribution, A&R and management company",
+    stacks: ["Next.js", "TypeScript", "ShadCn", "Paystack", "Tailwind CSS"],
+    gitLink: "https://github.com/christofa/synnex-webpage",
+    sitLink: "https://synnexent.com/",
+    isCompleted: true,
   },
   {
     id: 3,
-    image:
-      "/images/Echobase.png",
-    title: "EchoBase",
-    description: "A scalable voice-enabled AI platform built with Supabase, Next.js, and modern AI tools for conversational voice interactions.",
-    stacks: ["React.js", "TypeScript", "HeroUI", "Supabase", "Groq", "Deepgram", "Tailwind CSS"],
-    gitLink:
-      "https://github.com/christofa/voice-ai-webpage",
-    sitLink: "https://echobase-theta.vercel.app/",
+    image: "/images/HGC-Logo.jpg",
+    title: "High Grace College Website",
+    description:
+      "The Official website for High Grace College, a secondary school in Nigeria",
+    stacks: [
+      "Next.js",
+      "TypeScript",
+      "HeroUI",
+      "MongoDB",
+      "Cloudinary",
+      "Tailwind CSS",
+    ],
+    gitLink: "https://github.com/christofa/hgc-webpage",
+    sitLink: "https://highgracecollege.com.ng/",
     isCompleted: true,
   },
   {
     id: 4,
-    image:
-      "/images/Proj-1.svg",
+    image: "/images/3rendy.png",
+    title: "3rendy",
+    description:
+      "A digital advertising platform that connects brands with influencers for effective marketing campaigns.",
+    stacks: [
+      "Next.js",
+      "TypeScript",
+      "SchadCn",
+      "Bun",
+      "email.js",
+      "Tailwind CSS",
+    ],
+    gitLink: "https://github.com/christofa/3rendy",
+    sitLink: "https://3rendy.vercel.app/",
+    isCompleted: true,
+  },
+  {
+    id: 5,
+    image: "/images/Echobase.png",
+    title: "EchoBase",
+    description:
+      "A scalable voice-enabled AI platform built with Supabase, Next.js, and modern AI tools for conversational voice interactions.",
+    stacks: [
+      "React.js",
+      "TypeScript",
+      "HeroUI",
+      "Supabase",
+      "Groq",
+      "Deepgram",
+      "Tailwind CSS",
+    ],
+    gitLink: "https://github.com/christofa/voice-ai-webpage",
+    sitLink: "https://echobase-theta.vercel.app/",
+    isCompleted: true,
+  },
+  {
+    id: 6,
+    image: "/images/Proj-1.svg",
     title: "Conarative",
     description: "An AI application where you can tell your stories",
     stacks: ["React.js", "TypeScript", "ShadCn", "Vite", "Tailwind CSS"],
@@ -55,9 +95,8 @@ const projects = [
     isCompleted: true,
   },
   {
-    id: 5,
-    image:
-      "/images/Proj-2.svg",
+    id: 7,
+    image: "/images/Proj-2.svg",
     title: "CupidNotes",
     description: "An Anonymus love Messaging app for lovers",
     stacks: ["React.js", "Vite", "Node.js", "ExpressJS", "MongoDB"],
@@ -66,20 +105,19 @@ const projects = [
     isCompleted: false,
   },
   {
-    id: 6,
-    image:
-      "/images/Proj-3.svg",
+    id: 8,
+    image: "/images/Proj-3.svg",
     title: "Therapy-Buddy",
-    description: "Built an AI therapy Chatbot created for students' mental health",
+    description:
+      "Built an AI therapy Chatbot created for students' mental health",
     stacks: ["React.js", "Vite", "SCSS", "Dido"],
     gitLink: "https://github.com/christofa/Therapy-Buddy",
     sitLink: "https://therapy-bud.netlify.app/",
     isCompleted: true,
   },
   {
-    id: 7,
-    image:
-      "/images/Proj-4.svg",
+    id: 9,
+    image: "/images/Proj-4.svg",
     title: "Magicbookwriter",
     description:
       "Collaborated with a team of 6 to create an AI kid's story writer",
@@ -89,9 +127,8 @@ const projects = [
     isCompleted: true,
   },
   {
-    id: 8,
-    image:
-      "/images/Proj-5.svg",
+    id: 10,
+    image: "/images/Proj-5.svg",
     title: "2D block game",
     description: "A 2d-block game built with sockets.io",
     stacks: ["Vue.js", "Node.js", "Express.js"],
@@ -100,9 +137,8 @@ const projects = [
     isCompleted: true,
   },
   {
-    id: 9,
-    image:
-      "/images/Proj-7.svg",
+    id: 11,
+    image: "/images/Proj-7.svg",
     title: "Speech-recognition-chat-app",
     description: "A speech recognition web app created with vanilla JS",
     stacks: ["JavaScript", "CSS"],
@@ -111,9 +147,8 @@ const projects = [
     isCompleted: true,
   },
   {
-    id: 10,
-    image:
-      "/images/Proj-8.svg",
+    id: 12,
+    image: "/images/Proj-8.svg",
     title: "My Portfolio",
     description: "A website displaying all my capabilities and skills",
     stacks: ["ReactJs", "ShadCn", "MongoDB"],
@@ -158,20 +193,20 @@ function Projects() {
         {isToggled ? (
           <Projects2 />
         ) : (
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 lg:gap-6 md:gap-6 max-w-7xl animate-pop-in">
+          <div className="mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 lg:gap-6 max-w-7xl animate-pop-in">
             {projects.map((projects) => (
               <Card.Root
                 overflow="hidden"
-                className="group relative flex h-full max-w-[179px] lg:max-w-[260px] md:max-w-[260px] shadow-md"
+                className="group relative flex h-full w-full shadow-md"
                 key={projects.id}
                 bg={{ base: "white", _dark: "#1E1E1E" }}
               >
                 <div className="flex h-full w-full flex-col">
-                  <div className="relative h-[140px] lg:h-[180px] md:h-[180px] w-full overflow-hidden">
+                  <div className="relative aspect-[16/10] w-full overflow-hidden">
                     <Image
                       src={projects.image}
                       alt="Project cover image"
-                      className="h-full w-full object-cover"
+                      className="h-full w-full object-cover object-center"
                     />
                     <span
                       className={`border-2 absolute top-2 right-2 px-2 py-1 rounded-full text-xs lg:text-sm ${
@@ -184,7 +219,10 @@ function Projects() {
                     </span>
                   </div>
 
-                  <Card.Body gap="2" className="flex flex-1 flex-col p-3 lg:p-5 md:p-5">
+                  <Card.Body
+                    gap="2"
+                    className="flex flex-1 flex-col p-3 lg:p-5 md:p-5"
+                  >
                     <Card.Title className="font-semibold min-h-[40px] lg:min-h-[48px]">
                       {projects.title}
                     </Card.Title>
@@ -202,11 +240,12 @@ function Projects() {
                       ))}
                     </Card.Description>
 
-                    <div className="mt-auto flex items-center gap-2 lg:gap-4 md:gap-4">
+                    <div className="mt-auto flex flex-col sm:flex-row items-stretch gap-2 lg:gap-4 md:gap-4">
                       <a
                         href={projects.gitLink}
                         target="_blank"
-                        className="w-1/2"
+                        rel="noreferrer"
+                        className="w-full sm:w-1/2"
                       >
                         <Button className="w-full text-[12px] lg:text-xs font-semibold bg-[#4f46e5] text-white transition-all duration-200 hover:scale-105 hover:bg-[#4f46e5] active:scale-95 flex items-center justify-center gap-2">
                           <FiGithub className="w-[12px] h-[12px] lg:w-[16px] lg:h-[16px] md:w-[16px] md:h-[16px]" />
@@ -216,7 +255,8 @@ function Projects() {
                       <a
                         href={projects.sitLink}
                         target="_blank"
-                        className="w-1/2"
+                        rel="noreferrer"
+                        className="w-full sm:w-1/2"
                       >
                         <Button className="w-full text-[12px] lg:text-xs font-semibold border border-[#4f46e5] transition-all duration-200 hover:scale-105 hover:bg-[#4f46e5] active:scale-95 flex items-center justify-center gap-2">
                           <MdArrowOutward className="w-[12px] h-[12px] lg:w-[16px] lg:h-[16px] md:w-[16px] md:h-[16px]" />
