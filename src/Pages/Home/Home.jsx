@@ -66,6 +66,7 @@ function Home() {
   return (
     <Layout>
       <div className=" mt-10 mb-5 font-inter">
+        {/* Heading-Section */}
         <div className="flex justify-between items-center mb-28 mx-4 lg:mx-20 md:mx-8 animate-fade-in-up">
           <div className="w-[600px]">
             <div className="block lg:hidden md:hidden">
@@ -112,6 +113,7 @@ function Home() {
           </div>
         </div>
 
+        {/* Recent Work Section */}
         <div className="my-20 mx-4 lg:mx-20 md:mx-8">
           <h2 className="text-center text-2xl font-bold mb-8">Recent Work</h2>
           <Card />
@@ -123,7 +125,7 @@ function Home() {
             </Button>
           </div>
         </div>
-
+        
         <div className="my-20 mx-4 lg:mx-20 md:mx-8">
           <h2 className="text-center text-2xl font-bold mb-8">My Expertise</h2>
           <div className="grid grid-cols-2 lg:grid-cols-3 md:grid-cols-3 gap-2 lg:gap-[30px] md:gap-[15px] lg:mx-[40px]">
