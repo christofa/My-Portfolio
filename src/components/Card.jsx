@@ -72,14 +72,14 @@ export default function card() {
       </Card.Root>
       <Card.Root maxW="xl" overflow="hidden" className="shadow-md" bg={{ base: "white", _dark: "#1E1E1E" }}>
         <Image
-          src="/images/Proj-8.svg"
+          src="/images/3rendy.png"
           alt="Green double couch with wooden legs"
           className="w-full lg:w-full h-[135px] lg:h-[260px] md:h-[250px]"
         />
         <Card.Body gap="2" className="w-[100%] lg:w-full md:w-full p-3 lg:p-5 md:p-5">
           <Card.Title className="text-[14px] lg:text-[18px] md:text-[18px]  font-semibold">3rendy</Card.Title>
           <Card.Description className="text-[10px] lg:text-sm md:text-sm text-[#666f77]">
-           A website displaying all my capabilities and skills.
+           A digital advertising platform that connects brands with influencers for effective marketing campaigns.
           </Card.Description>
         </Card.Body>
         <Card.Footer className="p-3 lg:p-5 md:p-5">
