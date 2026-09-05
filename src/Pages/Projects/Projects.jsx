@@ -12,7 +12,14 @@ const projects = [
     title: "ConstestLedger",
     description:
       "A decentralized application that allows users to create and manage contests, track entries, and view results.",
-    stacks: ["Next.js", "TypeScript", "ShadCn", "CKB Testnet", "Turso", "Better-Auth"],
+    stacks: [
+      "Next.js",
+      "TypeScript",
+      "ShadCn",
+      "CKB Testnet",
+      "Turso",
+      "Better-Auth",
+    ],
     gitLink: "https://github.com/christofa/contestledger",
     sitLink: "https://contestledger.vercel.app/",
     isCompleted: true,
