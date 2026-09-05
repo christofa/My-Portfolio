@@ -70,14 +70,15 @@ function Home() {
         <div className="flex justify-between items-center mb-28 mx-4 lg:mx-20 md:mx-8 animate-fade-in-up">
           <div className="w-[600px]">
             <div className="block lg:hidden md:hidden">
-            <img
-              src="/images/My-Image.jpg"
-              alt="chris"
-              className="w-[60px] h-[60px] object-cover rounded-full border-4 border-[#4f46e5] mb-4"
-            />
+              <img
+                src="/images/My-Image.jpg"
+                alt="chris"
+                className="w-[60px] h-[60px] object-cover rounded-full border-4 border-[#4f46e5] mb-4"
+              />
             </div>
             <h1 className="text-4xl lg:text-5xl md:text-[45px] font-bold">
-              Hi, I&apos;m <span className="text-[#4f46e5]">Christopher Okoro</span>.
+              Hi, I&apos;m{" "}
+              <span className="text-[#4f46e5]">Christopher Okoro</span>.
               Creative Developer, Technical Writer and Designer.
             </h1>{" "}
             <br />
@@ -125,7 +126,7 @@ function Home() {
             </Button>
           </div>
         </div>
-        
+
         <div className="my-20 mx-4 lg:mx-20 md:mx-8">
           <h2 className="text-center text-2xl font-bold mb-8">My Expertise</h2>
           <div className="grid grid-cols-2 lg:grid-cols-3 md:grid-cols-3 gap-2 lg:gap-[30px] md:gap-[15px] lg:mx-[40px]">
