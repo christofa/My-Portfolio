@@ -2,130 +2,134 @@ import { Button, Card, Image } from "@chakra-ui/react";
 import { MdArrowOutward } from "react-icons/md";
 
 const projects = [
-    {
-      id: 1,
-      image:
-        "/images/Tproj-1.PNG",
-      title: "Rendering real-time data with Vue, Node, and socket.io",
-      description: "Used vue, node & sockets to build a 2D game.",
-      stacks: ["Vue.js", "Node.js", "Socket.io"],
-      link: "https://blog.openreplay.com/render-real-time-data-with-vue-node-and-socket-io/",
-      isCompleted: true,
-    },
-    {
-      id: 2,
-      image:
-        "/images/Tproj-4.PNG",
-      title: "Recognizing Speech with vanilla JavaScript",
-      description: "Used vanilla JavaScript to build a speech recognition app",
-      stacks: ["JavaScript", "CSS"],
-      link: "https://blog.openreplay.com/recognizing-speech-in-vanilla-javascript/",
-      isCompleted: true,
-    },
-    {
-      id: 3,
-      image:
-        "/images/Tproj-5.PNG",
-      title: "Build a Real Estate Platform with React and Webiny Headless CMS",
-      description: "Used the advanced search feature of Webiny CMS to build a real estate platform",
-      stacks: ["React.js", "GraphQL", "Webiny CMS"],
-      link: "https://www.webiny.com/blog/build-a-real-estate-platform-with-react-and-webiny-cms",
-      isCompleted: true,
-    },
-    {
-      id: 4,
-      image:
-        "/images/Tproj-6.PNG",
-      title: "Building a Voice Controlled News Application using React, Alan AI, and Webiny CMS",
-      description: "Used Webiny CMS and Alan Ai build a voice-controlled blog",
-      stacks: ["React.js", "Alan AI", "GraphQL", "Webiny CMS"],
-      link: "https://www.webiny.com/blog/build-voice-controlled-news-app-alanai-webiny",
-      isCompleted: true,
-    },
-    {
-      id: 5,
-      image:
-        "/images/Tproj-3.PNG",
-      title: "Build a Text Translator using React and Swagger UI",
-      description: "Used Swagger ui to create an app that translates texts",
-      stacks: ["React.js", "CSS", "Swagger UI"],
-      link: "https://blog.openreplay.com/build-a-text-translator-using-react-and-swagger-ui/",
-      isCompleted: true,
-    },
-    {
-      id: 6,
-      image:
-        "/images/Tproj-2.PNG",
-      title: "Constructing an Alan AI-Powered Shopping Cart",
-      description: "Built a voice-controlled shopping cart using Alan AI",
-      stacks: ["React.js", "CSS", "Alan AI"],
-      link: "https://blog.openreplay.com/constructing-an-alan-ai-powered-shopping-cart/",
-      isCompleted: true,
-    },
-  ];
+  {
+    id: 1,
+    image: "/images/Tproj-1.PNG",
+    title: "Rendering real-time data with Vue, Node, and socket.io",
+    description: "Used vue, node & sockets to build a 2D game.",
+    stacks: ["Vue.js", "Node.js", "Socket.io"],
+    link: "https://blog.openreplay.com/render-real-time-data-with-vue-node-and-socket-io/",
+    isCompleted: true,
+  },
+  {
+    id: 2,
+    image: "/images/Tproj-4.PNG",
+    title: "Recognizing Speech with vanilla JavaScript",
+    description: "Used vanilla JavaScript to build a speech recognition app",
+    stacks: ["JavaScript", "CSS"],
+    link: "https://blog.openreplay.com/recognizing-speech-in-vanilla-javascript/",
+    isCompleted: true,
+  },
+  {
+    id: 3,
+    image: "/images/Tproj-5.PNG",
+    title: "Build a Real Estate Platform with React and Webiny Headless CMS",
+    description:
+      "Used the advanced search feature of Webiny CMS to build a real estate platform",
+    stacks: ["React.js", "GraphQL", "Webiny CMS"],
+    link: "https://www.webiny.com/blog/build-a-real-estate-platform-with-react-and-webiny-cms",
+    isCompleted: true,
+  },
+  {
+    id: 4,
+    image: "/images/Tproj-6.PNG",
+    title:
+      "Building a Voice Controlled News Application using React, Alan AI, and Webiny CMS",
+    description: "Used Webiny CMS and Alan Ai build a voice-controlled blog",
+    stacks: ["React.js", "Alan AI", "GraphQL", "Webiny CMS"],
+    link: "https://www.webiny.com/blog/build-voice-controlled-news-app-alanai-webiny",
+    isCompleted: true,
+  },
+  {
+    id: 5,
+    image: "/images/Tproj-3.PNG",
+    title: "Build a Text Translator using React and Swagger UI",
+    description: "Used Swagger ui to create an app that translates texts",
+    stacks: ["React.js", "CSS", "Swagger UI"],
+    link: "https://blog.openreplay.com/build-a-text-translator-using-react-and-swagger-ui/",
+    isCompleted: true,
+  },
+  {
+    id: 6,
+    image: "/images/Tproj-2.PNG",
+    title: "Constructing an Alan AI-Powered Shopping Cart",
+    description: "Built a voice-controlled shopping cart using Alan AI",
+    stacks: ["React.js", "CSS", "Alan AI"],
+    link: "https://blog.openreplay.com/constructing-an-alan-ai-powered-shopping-cart/",
+    isCompleted: true,
+  },
+];
 
 function Projects2() {
   return (
-    <div className='font-inter animate-pop-in'>
+    <div className="font-inter animate-pop-in">
       <div className="mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 lg:gap-6 max-w-7xl">
-                {projects.map((projects) => (
-                  <Card.Root
-                    overflow="hidden"
-                    className="group relative flex h-full w-full shadow-md"
-                    key={projects.id}
-                    bg={{ base: "white", _dark: "#1E1E1E" }}
-                  >
-                    <div className="flex h-full w-full flex-col">
-                      <div className="relative aspect-[16/10] w-full overflow-hidden">
-                        <Image
-                          src={projects.image}
-                          alt="Article cover image"
-                          className="h-full w-full object-cover object-center"
-                        />
-                        <span
-                          className={`border-2 absolute top-2 right-2 px-2 py-1 rounded-full text-xs lg:text-sm ${
-                            projects.isCompleted
-                              ? "bg-green-100 text-green-800"
-                              : "bg-red-100 text-red-800"
-                          }`}
-                        >
-                          {projects.isCompleted ? "Completed" : "In Progress"}
-                        </span>
-                      </div>
-
-                      <Card.Body gap="1" className="flex flex-1 flex-col p-3 lg:p-5 md:p-5">
-                        <Card.Title className="font-semibold text-sm min-h-[36px] lg:min-h-[44px]">
-                          {projects.title}
-                        </Card.Title>
-                        <Card.Description className="text-[10px] lg:text-xs md:text-xs mb-2 line-clamp-3 min-h-[54px] lg:min-h-[60px]">
-                          {projects.description}
-                        </Card.Description>
-                        <Card.Description className="mb-3 flex flex-wrap items-center gap-2 min-h-[36px]">
-                          {projects.stacks.map((stacks) => (
-                            <div
-                              key={stacks}
-                              className="border border-[#4f46e5] text-[9px] lg:text-[12px] font-semibold px-2 py-1 rounded text-[#4f46e5]"
-                            >
-                              <p>{stacks}</p>
-                            </div>
-                          ))}
-                        </Card.Description>
-
-                        <div className="mt-auto flex items-center gap-2">
-                          <a href={projects.link} target="_blank" rel="noreferrer" className="w-full">
-                            <Button className="w-full rounded text-[12px] lg:text-xs md:text-xs font-semibold bg-[#4f46e5] text-white transition-all duration-200 hover:scale-105 hover:bg-[#4f46e5] active:scale-95 flex items-center justify-center gap-2">
-                              <MdArrowOutward className="w-[12px] h-[12px] lg:w-[16px] lg:h-[16px] md:w-[16px] md:h-[16px]"/> 
-                              Read Article
-                            </Button>
-                          </a>
-                        </div>
-                      </Card.Body>
-                    </div>
-                  </Card.Root>
-                ))}
+        {projects.map((projects) => (
+          <Card.Root
+            overflow="hidden"
+            className="group relative flex h-full w-full shadow-md"
+            key={projects.id}
+            bg={{ base: "white", _dark: "#1E1E1E" }}
+          >
+            <div className="flex h-full w-full flex-col">
+              <div className="relative aspect-[16/10] w-full overflow-hidden">
+                <Image
+                  src={projects.image}
+                  alt="Article cover image"
+                  className="h-full w-full object-cover object-center"
+                />
+                <span
+                  className={`border-2 absolute top-2 right-2 px-2 py-1 rounded-full text-xs lg:text-sm ${
+                    projects.isCompleted
+                      ? "bg-green-100 text-green-800"
+                      : "bg-red-100 text-red-800"
+                  }`}
+                >
+                  {projects.isCompleted ? "Completed" : "In Progress"}
+                </span>
               </div>
+
+              <Card.Body
+                gap="1"
+                className="flex flex-1 flex-col p-3 lg:p-5 md:p-5"
+              >
+                <Card.Title className="font-semibold text-sm min-h-[36px] lg:min-h-[44px]">
+                  {projects.title}
+                </Card.Title>
+                <Card.Description className="text-[10px] lg:text-xs md:text-xs mb-2 line-clamp-3 min-h-[54px] lg:min-h-[60px]">
+                  {projects.description}
+                </Card.Description>
+                <Card.Description className="mb-3 flex flex-wrap items-center gap-2 min-h-[36px]">
+                  {projects.stacks.map((stacks) => (
+                    <div
+                      key={stacks}
+                      className="border border-[#4f46e5] text-[9px] lg:text-[12px] font-semibold px-2 py-1 rounded text-[#4f46e5]"
+                    >
+                      <p>{stacks}</p>
+                    </div>
+                  ))}
+                </Card.Description>
+
+                <div className="mt-auto flex items-center gap-2">
+                  <a
+                    href={projects.link}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="w-full"
+                  >
+                    <Button className="w-full rounded text-[12px] lg:text-xs md:text-xs font-semibold bg-[#4f46e5] text-white transition-all duration-200 hover:scale-105 hover:bg-[#4f46e5] active:scale-95 flex items-center justify-center gap-2">
+                      <MdArrowOutward className="w-[12px] h-[12px] lg:w-[16px] lg:h-[16px] md:w-[16px] md:h-[16px]" />
+                      Read Article
+                    </Button>
+                  </a>
+                </div>
+              </Card.Body>
+            </div>
+          </Card.Root>
+        ))}
+      </div>
     </div>
-  )
+  );
 }
 
-export default Projects2
+export default Projects2;
