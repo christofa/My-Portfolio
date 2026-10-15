@@ -42,5 +42,5 @@ Reach out via the contact form on the site or connect with me on LinkedIn or Twi
 
 ## 🖤 Acknowledgments
 
-Thanks to the open-source community and the tools that made this possible — React, Bun, Tailwind, and everyone building the modern web.
+Thanks to the open-source community and the tools that made this possible. React, Bun, Tailwind, and everyone building the modern web.
 
